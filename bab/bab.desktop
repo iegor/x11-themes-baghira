@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=bab
+Name[xx]=xxbabxx
+Exec=bab %i %m -caption "%c"
+Icon=baghira
+Type=Application
+DocPath=
+Comment=Access to the big black cat
+Terminal=0

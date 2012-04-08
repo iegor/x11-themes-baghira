@@ -1,0 +1,707 @@
+Baghira
+=======
+For all you Apple Junkies out there... (like me) ;-)
+Bases upon mosfet-liquid0.9.6pre4... the last heir of mosfet.
+Suggestions welcomed.
+
+Installation
+-----------------
+tar -xjf baghira.tar.bz2
+cd baghira/baghira
+either try ./install.sh or
+./configure --prefix=`kde-config --prefix` --disable-debug [--enable-final]
+(!!!BEGINNERS: the direction of the accents is _important_ (top-left to bottom-right), the rectangular brackets mean "this is optional" - don't type them!!!)
+make
+and finally as root:
+make install
+
+Changelog
+----------------
+*** IF YOU HAVE A 64 BIT MACHINE, UPDATE TO QT 3.3.3 ***
+will fix the horizontal slider problem, rotating pixmaps in general
+
+0.8
+----
+after a long time, this is a snapshot of the current cvs version and probably the last baghira for Qt3 ever.
+there won't be Baghira for Qt4, don't ask.
+- several bugfixes, minor changes, whatever.
+
+0.7a
+----
+- [style] Reincluded workaround for kpdf < 3.4.3
+- [style] added Milk style
+- [style] some code enhancements/cleanups
+- [bab] removed "start QString name int deco" dcop interface (useless anyway)
+- [bab] added "start QString name QString settings" dcop interface to allow starting a program with the rules set for another one (or a general rule like "Milk" ;)
+- [menubar applet] size fix (using an own settings value ;)
+
+0.7
+----
+Many? - see cvs log...
+- New Konqueror Sidebar (Hardware access + Drag 'n Drop link list)
+- New search oriented Application Launcher
+- More speed and less bugs in the style and the deco
+- New look on the brushed metal design
+- New Tiger design
+- New management to the menubar applet (in matters of size)
+.... and much more i forgot over the time ;)
+
+0.6e
+----
+Maintainance release (mainly)
+- Fixed compile error on kde3.3
+- Made resize grip optionally (off by default, disable if you get querky problems with the deco)
+- starter applet will auto correct size
+- added new widget color "Smoke" by Anton
+
+0.6d
+----
+==========================
+BECAUSE OF COLOR PREFIXES:
+If you think you've got an interesting colorset, that should be part of further releases, please drop me a mail.
+-----
+widget colors must include:
+- a name ("my colorset")
+- {R,G,B}, where R,G,B must be [0-255],[0-255],[0-255]
+-----
+deco colors must include:
+- a name ("my colorset")
+- {{R,G,B},{R,G,B},{R,G,B},{R,G,B},{R,G,B},{R,G,B},{R,G,B},{R,G,B},{R,G,B},{R,G,B}} in order:
+inactiveColor, closeColor, minColor, maxColor, menuColor, helpColor, stickyColor, aboveColor, behindColor, shadeColor
+(10 values)
+-----
+inclusion depends on my arbitrariness ;)
+==============================
+* (style) update: slightly changed the appereance of the scrollbar sliders (on DementedPixel note)
+* (style) update: appereance of groupboxes w/o title (improved the code resulting in more speed as well)
+* (config) feature: added color presets for the widget colors
+* (config) update: reorganized appereance a bit - NO changes on the config protocol though
+* (deco) feature: added a resize handle drag - this will probaby be optional on future releases, but currently im interested in FEEDBACK
+* (deco) update: corrected the button spacing (on DementedPixel note)
+* (deco) feature: added color presets for the buttons
+* (deco) feature: added option to remove captions as i saw some ppl interested on this.
+however in general i do not suggest this, as apps often use the title to indicate states (like e.g. unsaved)
+* (bab) bugfix: misbehaviour on dcop bab default start <appname> x command (start <app> x y was ok)
+* (starter) bugfix: compile error on non final compilations
+* (menuapplet) bugfix: compile error because of gcc/kde_export misbehaviour (3.3 problem?)
+  baghira will compile a 3.3 or 3.4 version depending on the current running system
+  (binary packagers should note this)
+* (menuapplet) update: improved Indicator title calculation
+* (menuapplet) update: ported modal window handling (0.6b) to 3.4 version
+* (icons) update: dfsw compliant license
+
+0.6c
+----
+* (overall) feature: if you compile yourself, you may try the ./install.sh script, being a GUI wizzard leading you through the installation (especially if you're unexperienced - everyone else: this was just for some lazy hour and playing around with kdialog, i'd personally never click through dialogs instead of ./configure; make; make install ;)
+* (overall) bugfix: included 0.6b fixes
+* (style) feature: because i was in some kind of nostalgic mood, i added jaguar (liquidlike) buttons. also as jaguar used darker stipples if and only if you use the bab dcop starter or predefinitions, using jaguar will lead to darker stipples (+4 to your default)
+* (style) note: this leads to new (consistent) settings: "0" is jaguar in style and deco, so calling
+dcop bab default start kcalc 0 0
+will bring you a jaguar kcalc
+dcop bab default start kcalc 1 2
+will instead bring you panther kcakc with a b/m deco
+THIS HAS ALSO IMPACT ON THE PREDEFINITIONS!
+You can either update them by hand or ONCE(!) call ./updatePredefs from the baghira topsrc dir
+* (style) update: better handling for icons on buttons
+* (style) update: improved editlines (thanks to Gav Wood for suggestion)
+* (config) bugfix: writing valid value for visible toolbuttons
+* (config) update: added option to replace kickers menu applet
+* (deco) update: removed left/right side lines if not using comicframe (looked as if the deco was smaller than the window)
+* (deco) update: corrected appereance of the left/right b/m resize handles
+* (kickermenu) bugfix: kde3.4 support - i don't know if it will still work correctly with kde3.3
+* (starter) new: i was sucked by kickers startbutton displaying the tooltip on hover, so i wrote a kickerapplet as startmenubutton replacement. you can use any png as button.
+name them bStarter.png, bStarter_hover.png, bStarter_down.png, and settle them in 22x22/action - defaults are included
+as i don't have such nice access on the startmenu as the button has, its not possible to close the menu by clicking again _AFFTER_ you left the button once, also the default KDE binding to the startmenu (alt+f1, windows key) will display the menu in the screen center instead below the (nonexistent) button
+
+0.6b
+----
+* (style) feature: animated pushbuttons
+* (style) bugfix: konqueror crashes on repolishes
+* (style) update: improved the look of (colored) iTunes (rectangular) buttons
+* (configuration) feature: look predefinition for each application (deco needs kde 3.4b1 and up to work)
+* (configuration) bugfix: skipped various unnecessary repolishes
+* (bab) update: rewrote the way design switching stuff according to kde 3.4, removed all imperfect workaround stuff -> works much better, but needs kde 3.4 to work properly
+* (kickermenu) update: using XClassHint to display the appname (better than relying on the netwm info)
+* (kickermenu) update: using app menu instead of desktop menu for modal dialogs
+* (kickermenu) note: kicker from kde 3.4 has a special menupanel that autoloads the kicker menuapplet to display the menu. you can remove this menu and readd the baghiramenu, but you'll have to do that after every kde start. -> open [kdeprefix  - e.g. usr]/share/apps/kicker/applets/menuapplet.desktop, change "X-KDE-Library=menu_panelapplet" to "X-KDE-Library=b_menu_panelapplet" or (as root) run the following script (simply using sed to update the file):
+--------------------start---------------
+#!/bin/sh
+sed s/"X-KDE-Library=menu_panelapplet"/"X-KDE-Library=b_menu_panelapplet"/g $(kde-config --prefix)/share/apps/kicker/applets/menuapplet.desktop > _baghirabuffer_
+rm -f $(kde-config --prefix)/share/apps/kicker/applets/menuapplet.desktop
+mv _baghirabuffer_ $(kde-config --prefix)/share/apps/kicker/applets/menuapplet.desktop
+---------------------end----------------
+
+0.6a
+----
+* (style) serious bugfix: drawing groupbox frames on non groupboxes
+* (style) bugfix: popup menu painting
+* (style) bugfix: handles ksplash and kontact splash problem
+* (configuration) bugfix: resetting settings
+* (configuration) feature: save/restore settings to/from file
+* (icons) update: copyright notice
+* (general) bugfix: big endian (ppc/sparc) architecture support
+* (general) bugfix: openBSD support (thanks to Damir Naden)
+
+
+0.6
+---
+* stripped all fake translucency/shadows code, honoring the fact x.org 6.8 now supports true alpha handling
+* fixed OOo error (stupid one, btw. - only had to see it :)
+* tricked OOo to get background colored menubar/menus and keep nice button colors
+* better support for OOo scrollbars (allways displayd as active, as OOo does not support the MousOver effect)
+* better animation code - cpu hunger of some apps should be gone
+* completely new settings handling to avoid conflicts of concurring file accesses - unfortunately you'll have to recreate all your settings :(
+
+
+0.5f
+----
+bugfix release only
+bab started apps shouldn't hang
+konqueror shouldn't crash, NOTICE:
+the error occured, when updating the palette (applying a new background) to the toolbuttons (seems to be some very specific ones),
+please don't ask me why this worked before - i don't know (but i think it's related to the redesign of the eventhandler which now responds much faster)
+so the only solution i found was to disable the palette update for the toolbuttons, therefore you should display the inactive toolbuttons for b/m (e.g. by applying "brushed metal" or "both" in the last bab setting)
+
+0.5e
+----
+style:
+- fixed the "kde toolbar widget" thing (location bar/juk slider etc.)
+- worked around brushed metal kicker translucency support
+- changed the appereance of the kicker executor (like konqueror combobox)
+- worked around konqueror statusbar offset
+- flattened statusbars in genereal
+bab:
+- most important change:
+  bab supports a new dcop command to start applications with individual style settings, so
+  dcop bab babInterface start konqueror 1 2
+  will open konqueror b/m
+  the first argument is the command you want to execute.
+  if you want to use switches, use "" to combine them, i.e.
+  dcop bab babInterface start "konqueror --profile webbrowsing --caption Safari" 1 2
+  will start konqueror, b/m mode, show the about screen and renames the title to "Safari"
+  unfortunately the command may not contain a '"' or blanks, so if your app is named "kde application" you will not be able to pass it to bab, maybe i'll implement support for escape chars (\) if there's demand in the future.
+  the first digit addresses the style (so '0' means aqua, '1' means b/m) the second one the deco (predefined deco 0/1/2)
+  in addition there's a second command
+  dcop bab babInterface start xterm 0
+  only differing by the fact it only changes the deco design.
+  USE THIS ONE FOR NONE KDE APPS (i.e. everything that doesn't get styled by baghira) as the other function won't be able to reset the settings for style and deco.
+  The good thing about this:
+  1. You don't have to run complex scripts (maybe just check if dcop is running), bab does all for you
+  2. bab does not reset the settings until the app read them - so you will get style and deco you wanted
+  The "bad" thing:
+  Though much better than the solution before, this is not process relative, i.e.:
+  - start an app with long startup time (e.g. juk)
+  - start another app with short startup time directly after starting juk
+  the startups will interfere (i.e. the fast app will change the settings and the slow app will get uncertain settings)
+- just for cute... bab now "shapes" the upper corners of your screen (so any kickerbar there will be rounded as well:), but don't ask me about the perverse way i found to do so... ;)
+
+0.5d
+----
+- completely remodeled the eventfilter -> faster! (reload the library)
+- added some colored throbbers and an xcf so you can create your own colors
+- sorting headers appear colored
+- put the menuapplet into its own library, so it won't conflict with the kde one and is installed by default
+- corrected kwin (stippled) frame to align the style
+- corercted brushed toolbars (disalignment)
+
+0.5c
+----
+Added a patched version of the kicker menu applet, main difference:
+shows current window name left of the menu (you can also click this indicator to get a windowlist, as the menu takes space that's usually used for the taskbar)
+*** THIS MENU APPLET WOULD REPLACE THE ORIGINAL ONE, THEREFORE IT'S NOT AUTOINSTALLED ***
+to install it with baghira, edit the "subdirs" file and remove the "#" in front of "kickermenu" _before_ (!!!) ./configure
+
+*** KAnimWidget (Throbbers) now usefully support translucent pixmaps, so the throbber is now translucent (and i removed the ugly frame :) ***
+anyway, i don't know since which version this holds, therefore maybe you want to keep the old throbber to prevent uncleaned repaints
+(if someone wants to create the nice iTunes throbber - hey thanks, i don't have iTunes)
+
+Mainly kde3.3 alignments
+- fixed juk toolbar stuff (and any other)
+- fixed new kwin buttons
+- toplevelmenubars are not set to stipples anymore, honoring the fact, that the kicker menuapplet recolors them itself to kicker background
+- arrows will are dark grey rather than black - makes them appear more smooth
+
+- remodelled the include structure
+- fixed repolishment errors
+- fixed taskbar
+- deco can be set to have a frame in maximized mode as well
+- toolbuttons are not connected, if inactive toolbuttons are not shown
+
+0.5b
+----
+Style:
+- code improvements: should give some overall speed, closed a slight memory leak (lists of pointers in b/m mode)
+- rewrote the groupbox code -> 1. faster, 2. aligned stipples
+- combos on toolbars (konqueror :) look like the safari combo
+- changed the appereance of inactive sliders (no bubbles)
+- did anyone notice, i changed the stiopples again (figured out that apple uses bright-mid-dark-mid, while mosfet's stipple were dark-dark-bright-bright)
+  imho this leads to better readable text
+- corrected alignment of left side tile in b/m mode
+- handled amaroK in b/m mode
+
+Deco:
+- added option to auto add spycing between buttons (making use of the kde spacing leads to unhappy effects, i the window misses a button (e.g. minimize in baghira help))
+- corrected alignment of left side tile in b/m mode
+
+Bab:
+- fixed some saving issues
+
+Goodies:
+The stuff in this folder is not autoinstalled.
+Look into it and use whatever you want, however you want (except claiming cr and suing me for nonliterally copying ;)
+- added new stuff: bootsplash, konqui tile, kdm picture, lilo-bootscreen
+*** read the readme! ***
+
+0.5a
+----
+- BUGFIX (style): konqueror address label
+- BUGFIX (style): tab  hovering for b/m
+- WORKAROUND (style) kiconedit crashes on startup (notice that this error lies in kiconedit and the workaround will be removed as soon as kiconedit is fixed)
+- (style) corrected size of the add/remove tab buttons (prevetning from overlaying the tabs)
+- (deco): slightly modified coloring function (light dots on button top)
+
+
+0.5
+---
+STYLE
+=====
+- well, light gradient, right ;)
+- highlight color appears as gradient
+- TOPLEVEL (mac like) MENUABRS (read this):
+  The light gradient causes (of course) some trouble on the top level menubars, as the gradient is arranged to the corresponding application window - not to kicker.
+  As there was interference with the stipples, when using e.g. toplevel brushed metal menus embedded into aqua style kicker, i decided to force toplevel menubars appearing in aqua mode (stippled) assuming you're using an aqua like kicker. this will cause problems if you're using b/m kicker. in this case, i suggest to avoid toplevel menus to get a consistent look (while using auqa mode kicker is preferred)
+
+DECO
+====
+- new brushed style/removed flat brushed
+- BUGFIX: bottombar draws void
+- some graphical adjustments, corresponding to the brushed metal stuff
+- buttons masked on brushed metal design
+
+ICONS
+=====
+- new license, read "readme.copyright"
+
+
+0.4d
+----
+- several bugfixes, notable:
+  1. kicker children appear brushed metaled (if wished), thanks to A. Quincey
+  2. that bookmark button thing...
+     please notice, that this could not really be fixed (the kbookmarkbar somehow accesses the toolbar iterator while i'm using it to check the toolbar layout - what confuses both of us) but i excluded the bookmarkbar by it's name (that could easily differ in other kde versions) and assume it's structure (bunch of combined buttons - no breaks / spacers)
+  3. Corrected listviewheader hovering behaviour (wasn't that hard, after all...)
+- highlights of this version (gee... what a shameless self promotion :)
+  1. configurable deco button colors (added support for kde 3.3 buttons, well - hopefully, as i couldn't test yet)
+  2. tabs hover on mouseover
+  3. (round) iTunes like rectangular buttons
+
+0.4c
+----
+- (hopefully) fixed compiler stuff - code cleanup: later
+- redesigned the dialogs for the windeco 1024x768 compatible now (allmost 800x600 :)
+- fixed the toolbutton stuff
+- removed any listviewheader correction as this caused more problems that it could ever solve (if you worry about listviews, having too short headers and therefore paint void areas - complain to the appropriate author)
+
+0.4b
+-----
+code should be more iso-cpp compatible (especially the preprocessor stuff (#include/#define))
+it compiles nice on gcc-3.4.1, i have no idea about gcc-3.4.0
+
+STYLE
+=====
+- (initial support) of conjuncted toolbuttons (use smooth tool for best effect)
+  restrictions:
+  o only works with kde toolbars (not on toolbars in plain qt applications, e.g. qt-designer)
+  o only works when the kde toolbar uses kde toolbarbuttons (rather than qt toolbuttons) - most kde applications do, well - some do not (you'll see)
+  
+DECO
+====
+- includes version that was meant for 0.4a (see changelog for this version)
+- addidionally you can choose individual decos (_not_ buttons) for active and inactive windows
+
+
+0.4a
+-----
+fixed the and cleant up the makefiles - maybe you've got some useless stuff (menuentries, icons) in your system due to old releases
+call ./cleanMySystem /<prefix> from the baghira topdir if you wish to delete them (if you're paraniod, you can use this script as help for deleting them by hand as well)
+where <prefix> is the prefix you gave when configuring baghira
+
+STYLE
+=====
+- fixed some graphical errors (toolbar stuff etc)
+- it's now possible to tint the brushed metal style (autoapplied to the the deco as well)
+- tricked back the konqueror statusbar (gee.., we don't like to be recolored, right?)
+- found a (hopefully) better solution for the listviewheaders (setting only too small ones to be expanded)
+
+DECO
+====
+- fixed (and improved :) frame painting
+- new deco "glossy" using the aquarius coloring function
+
+CONFIG
+======
+- added color picker for the aquarius function
+  *notice* this is only a _color picker_
+  to not mess up with your color scheme arrangement, it will not touch the current color settings
+
+0.4 (finally :)
+----------------
+YOU WILL NEED KDE 3.2 TO SUCCESSFULLY COMPILE THIS PACKAGE !
+Though i applied all kindly provided gcc-3.4 patches, i yet did not install this compiler, so i don't guarantee it will work, patched versions of gcc-3.3 (gcc-3.3-x) may also fail
+
+STYLE
+=====
+- new coloring function "Aquarius" - replacing the "icy" style. 
+  as the two functions are incompatible on pixmap layer, there's no way back - sorry
+- ended the stipple experiment
+- fixed some stuff (missing pixel on tabs, tabclosebutton position, ... whatever (more stuff i forgot - test if your main issue is fixed and complain if not :P ))
+- improved scrollbar animation code, fixed the juk problem as side effect. the deactivation is yet not functional (forgot to implement) expect for 0.4a
+- improved the popuptranslucency for menubars - as a sideefeect, the dynamic offscreen buffer (to prevent artefacts) now works on toplevel menus (macstyle menus)
+
+DECO
+====
+- now shipped with package :P
+- better 3D effect for the title (dark/bright offset like Apple does, to provide distinction from any background)
+- comic frame in titleblend color (right, resp. bottom color)
+- complete change of big bottom bar - change to 6px thick bar to only provide shaped framing
+- fixed several issues with the frame size (eg. width on maximized windows)
+
+BAB
+===
+- bab now also provides dcop acces to the windeco style
+
+CONFIG DIALOG
+=============
+- completely new, though tested, some settings could have unexpected results (i couldn't really test everything), please notice if you find something (besides deactivation of scrollbar animation - see above)
+- attaches to the style dialog
+- the old dialog remains in system unless you remove it by hand (look for "kcm_kcmbaghira.la", "kcm_kcmbaghira.so" in $(PREFIX)/lib/kde3/ and "kcmbaghira.desktop" in $(PREFIX)/share/applnk/Settings/LookNFeel)
+- test the about dialog =)
+- click help
+- more intuitive interface with a later release (setting dependend deactivation of widgets, etc.)
+
+COLORSCHEMES
+============
+Christian Lehmann provided two new Colorschemes for the new function, AquaBlue and AquaGraphite - they're auto installed
+as starting point, you could try rgb = 84,140,242 for the button - avoid very low or very high saturated color (result is uncolored/flat colored)
+
+ICONS
+=====
+Due to massive request (protest?) the icons for bab and the black and blue paw are installed to your system... NO COMPLAINTS ABOUT THAT, PLEASE...
+The throbber is _not_ installed (sorry, but this would be much too invasive) - if you want it, copy it by hand
+
+SCRIPTS
+=======
+- added a script terminal to roughly show bab/dcop/windeco functionality (the script uses sleep - if it does not work on your system, use kstart similar to the other sripts and remove the sleep call)
+- scripts are not installed, as they're just examples
+
+FINAL WORDS
+===========
+haha...! i even had some letters left ;)
+
+-----------------------------------------------------------------------------------
+===================================================================================
+-----------------------------------------------------------------------------------
+
+0.3s
+- tweaked several graphics
+  o i was annoyed by the raised panels in knetscan, so i forced panels to appear sunken, similar to the editframes
+  o changed appereance of the toolbarhandlers (the old where too loud)
+  o fixed bug on splitters (well, somehow - obviously noone cares about the direction flag)
+  o fixed "bug" that lead to black frames under combos in some apps (e.g. amaroK)
+- bugfixed the setting stuff (misdisplayd groupboxes, ability to unset shadows under popups...)
+- Tab vs. Chooser is now optional
+  o the default setting is somewhat clever, i.e. if the toplevel widget is a dialog, tabs appear as choosers, as oldstyle tabs elsewise
+    -> result: apps like konqueror, kdevelop, quanta, konsole... will show tabs, dialogs will show choosers
+  o you can define the tab behaviour for aqua and brushed metal individually in the bab menu
+- fixed menu animation stuff
+- fixed bookmark menu behaviour (so could have told me...)
+- fixed toolbutton repolishment
+- "--enable-final" should work again
+- bab:
+  o added a dropdownmenu (rightclick), currently mainly to allow you to set a default style (so you don't have to care about the setting when shutting down kde)
+- lightweightened the stipples (more aqua like) and improved alignment (!you do not need to set the align stipples checkbox - it's useless!)
+- new icons, created by timur ((c) 2004 TKdesign-studio.com. All rights reserved.)
+
+- ppc users: i added an endian definition to baghira.h - try to set it to big endian (but i don't know if it'll help)
+
+0.3r
+- scrollbars:
+  o no useless sliders are drawn
+  o code should be faster now
+- changed the tabbars to look like apples chooser widgets (button tabs)
+  this is a bit hackish, as qt doesn't know choosers
+  i don't knwow if i can easily make this optional, so i'll probably rely on reactions...
+- went through the polishment code, uhmmm... that was really necessary
+- option to brush me...
+
+0.3q
+- new arrows on scrollbars + combos (thanks to Narcis Tesa for providing the pix)
+- added option to fade in popup menus (works with translucency)
+- Tabbar Bases will follow tabs colors :)
+
+0.3p
+- redesigned groupboxes (twice as fast :)
+- corrected wrongly shadowed widgets (flat groupboxes)
+- redesigned scrollbars
+
+0.3o
+- IMPROVED MEMORY MANAGEMENT - menus won't eat your memory anymore
+- fixed bugs that may have caused crashes on some systems
+- thanks to "mbllos" for some code optimization and a bugfix in the button coloring function
+- slight changes to the toolbuttons (especially the round version)
+- pressed sliders aren't animated, better slider hover behaviour at all, "hand" cursor on sliders
+- included throbber for konqueror - copy to your icon folder (global is $KDEPREFIX/share/icons/default.kde)
+- fixed nasty bug when trying to remove nonexistent popupmenushadows (crashed tear off menus)
+
+
+0.3n
+- fixed error that lead korganizer to crash (well, it's rather a workaround - as the KOAgenda class doesn't like foreign eventhandlers, i removed my - on cost of slider behaviour)
+- fixed graphical error on some scrollbars
+- fixed qtoolbutton error (some non stippled and miscolored buttonbackgrounds in toolbars)
+- fixed error on some scrollviews (that didn't highlight the scrollers)
+- fixed graphical problem with stipple unalignment on toolbars
+- better support for toolbuttons besides toolbars (e.g. k3b)
+- some further (minor) graphical improvements
+- better menu-indicator/shadow related behaviour... yes, i said this wouldn't be possible, but it annoyed me too much, so i did it. (anyone here may thank RenderMan for this, he asked and this followed me so i really had to fix this :)
+
+0.3m
+- speedUps, speedUps anywhere... ;-)
+  1. by avoiding permanent repaint (update) of animated widgets (scrollers/progressbar)) - nice sideeffect: scrollers are back on wished behaviour again ;-)
+  2. by avoiding useless searching the dictionaries (restructured popup code - allmost feared it'd never compile anymore...) and some calculations ;-)
+- especially for jos added a new option for even smoother taskbar butoons ;-)
+- fixed miinor error in kcmbaghira (you couldn't set opacity in gradient mode / stuck to custom opacity)
+- removed annoying progress percent display
+
+0.3l
+- modified dropshadow behaviour (menus < shadowoffset won't draw any shadow at the too small side)
+- slightly changed sublying pixmap for scrollbar sliders
+- new progressbar for "apple" style
+- new progressbar behaviour ;-) (try apple or liquid - i'm sorry i denied this was possible... i'm just a little fool):\
+- also new Scrollbar bahaviour (side effect: if there are more scrollable areas in an app, all scrollers will be paint active if you enter one.
+- slightly rounded the rect toolbuttons
+- more apple like shadows - i hope to soon provide fast blurring AND I DO NOT LIKE THE MS STYLE!!! (yes, this means you, RenderMan! ;-)
+  (notice that 1. the current implementation is subefficient - i'll enhace that for next release; 2. this totally messed up my translucency code - so if you notice any artefacts, fractions or shifts: please drop me a mail ;-)
+0.3k (serious bugfix release, recommanded over 0.3j)
+- better support for groupboxes of kicker apps (e.g. button background)
+- fixed error on small popupmenus (thanks to RenderMan for the hint!)
+- (rough) support for bottom Tabs (cause konsole will use them in 3.2)
+- included math.h - i still do not understand, why some compilers (gcc versions!!!) do not suppport exp and pow internal? %)
+0.3j
+- corrected slider geometrics (won't slide out of sliderarea, you can grip the whole slider)
+- corrected highlighted menutext color when using custom menu colors
+- set the very small pushbuttons to new gradient style
+- set minimum tab height to 27 pixels (regarding to tabs on apples homepage)
+- reordered dropshadow calling process
+- changed behaviour of kicker headers (task buttons - to say it the ms way...:) - highlightning/coloring assumes them to be NOT button colored (rather background)
+- corrected slider color on groupboxes also for my friends, who don't like stipples... ignoramuses ;-)
+- added gradient translucency (but please don't expect this to be a speed wonder - the gradient has to be rendered for every menu (as they can be of different width) and then blended to the background completely (different from common translucency, where i can often take parts out of the buffer)
+However: it's at least ghost free and not rendered twice - if you close and then reopen a submenu (e.g. from a menubar)
+- added buffer to provide ghost free shadows (this leads to double buffering for translucency, well - gradients are and keep doublebuffered anyway)
+- added free sizable menu drop shadows (w/o kde bug on shadows that run out of screen) / the shadows could need a gaussian blur (otherwise big shadows look too sharp) - we'll hopefullly see that next time... (for the moment, i suggest to use bright shadows (1 - not 0) to lower this effect)
+- disaligned menuchecks should no be (vertically) aligned
+- hopefully fixed a polishment bug about combos on toolbars (?!)
+=====================================================
+AND: IMPORTANT TO ANYONE!!! DEACTIVATE KDE DROPSHADOWS!!!
+(as they'll produce artefacts in traslucent menus
+ + artefacts within themselves
+ + artefacts in my shadows
+ + unnecessary slow down menus)
+=====================================================
+
+0.3i
+- fixed drawing error on horizontal splitters
+- added new sliderarrow (thanks to Narcis Tesa for the picture)
+!!! NOTICE: The new Image is (allthough applelike) very big and vertical asymmetrical displayed - this can lead to inadequate look if i can't change its size - e.g. if it settles on a toolbar (open juk to see what i mean) the only way to handle this, is resetting the toolbarsize to at least 24 pixels. As e.g. only provides a maximum of 22 pixels, you have to edit its config file by hand: open ~/.kde/share/config/jukrc, look for the [MainWindow Toolbar playToolBar] section and set "IconSize=24". - sorry for this.
+- slightly changed the tabbarbase on icy buttons (by user request and because it was necessary:)
+- scroller activation now also works with kwrite and dependent apps (gideon, etc)
+- improved support for custom menu colors (child menu triangles, checkmarks, splitters)
+- improved (generalized) toolbar color handling (background seperators leaded to uncolored konqueror completition box - this shouldn't happen to any widget anymore)
+============================================================================
+=== R E A D   T H I S ! ! ! =============================================================
+============================================================================
+I stole the whole menudropshadow stuff from kstyle (thanks to the developers) to call them at the moment I (yes: ME:-) want!
+PLEASE TEST THEM EXCESSIVLY and tell me, if you notice any ghosts from them by doing anything. thanks.
+I WON'T MODIFY FOREIGN APPS SETTINGS! therefore you have to DEACTIVATE KDE MENU DROPSHADOWS yourself! - sorry for the inconvenience.
+as they're active by default it's a good idea to deactivate menudropshadows in kde's style settings
+( i know that they're still ghost effects in the shadow itself - i'll try to fix that soon )
+============================================================================
+- stole kstyle function for double buffered sliders and adjusted it for use with shadowed groupboxes (allows slider moving without artefacts) - you can read it. i'm a thief. i stole it - their precious - and THEY WANTS IT! ;-)
+
+0.3h (for massive (!) but unserious bugfix)
+- added smooth toolbuttons option
+- hacked around smudge error on automoving sliders (does NOT hold for sliders on groupboxes, if shadows activated)
+- you now can choose between liquid, old and newstyle baghira progress bar (honestly i prefer the original baghira style, too - well, apple's not always perfect ;-)
+...
+HOLY SH**, i can't believe, nobody mentioned that before: did you never try to change to a custom menu style (color, unstippled translucency???) didn't you see there was something terribly wrong??? e.g.: IT JUST DIDN'T WORK?
+- fixed that, so menu styling now behaves as it should. (hell on earth, i've to do everything myself - even kickin' my butt... ;-)
+(head over to resexcellence and look at the milk screenshot, if you want to know why - black translucent menus look really cool (imho), allthough qt seems to have problems displaying bright text on a dark background)
+- kde's menu dropshadows sometimes still mess up with my code (and theirs, too) the reason is that I (and they) have to sync qt with xfree before i can take a screenshot - the result is that the menushadow can appear during this time and then is also captured (if i don't capture it, it will leave a white ghost instead of a black one).
+for the moment i have to suggest to deactivate menu dropshadows to get better translucency results - i'll try to write my own dropshadows for a future release.
+- fixed minor unpolishment bug (accidently removed moustracking for all scrollviews - bad on combos, if not reactivated by new style..., well, i guess you didn't do that anyway ;))
+- slightly changed colortheme
+- made the splitter more decent
+
+0.3g (dedicated to howard shores score of "the return of the king", which kept me awake tonight =)
+- corrected position of new triangles on srollbars etc. a bit
+- found (tricky) solution for Toolbar Separators (please consult README about this!!! - especially if toolbuttons seem to misbehave):
+[well, seems you did :)
+OK, the following Part is a bit tricky!
+QT uses the Button Color to draw seperators on Toolbars.
+Unfortunately we cannot change this directly, so we have to set the button color of Toolbar Widgets to the background color.
+Unhappy Effect: Toolbuttons will lose the ability to highlight, as their Buttoncolor now changed to Background mode. (f***!)
+Solution: We reset the the Buttoncolor of Toolbuttons to Buttoncolor right after that.
+Unhappy Effect: Toolbuttons loose the ability to use redefined colors.
+Solution: Check, if button uses backgroud for color: then reset it to button
+Unhappy effect: An application cannot be redefine a Toolbutton color to background color.
+(The alternative would be to exclude apps like korn, that are known to redefine toolbutton color, but i think, this is the MUCH better way!)]
+- ...well now korn (and other apps) now also can have redefined toolbutton colors if you enable "draw toolbutton frames" (tststs..., sometimes i wonder if i can code anyway... :)
+- added an option to remove bevel around kicker (user request)
+- changed look of progressbar to fit apple's bevel rather than liquids
+- added an option to user liquid's progressbar (user request, as an offer, on the new progress bar groove - tell me your opinion)
+
+0.3f
+- menu translucency should now be PERFECT (i really like the word - howerver: never say never again... :)
+  this means: there won't be any ghostshadows anymore - no matter what you do. also no menu will be calculated twice if not nessecary (but don't forget: this is only pseudo translucency, this means, you won't capture background changes (animations aso.) as long as you don't close the menu)
+  Also menu dropshadows are supported
+- scrollbars now change to active (with visual notification, what means they're colored) when you enter a scrollable area. (unfortunately currently doesn't work with some apps that don't inherit QScrollview - e.g. kwrite, so ill try to catch that)
+- Kicker now draws (improved) smooth headers
+- fixed rect buttons stucked to non stipple background (thanks to RenderMan for the notice)
+- further minor graphical improvements...
+- i hate the groupshadows...  :) anyway, i found a rather simple solution to put a proper background to the buttons and sliders... (i could also apply this to the combos, but as they are almost rectangular, it wouldn't make much a difference. anyway: if someone is annoyed cause he runs a 320x240 ressolution, i'll improve that by request)
+- removed any (virtual) support for kde menutranslucency, as it's really not a good idea to have both enabled at the same time...
+- fixed an error to LVH triangles (thanks to Narcis Tesa for the hint)
+- changed triangles on scrollbars and menus to fit listview expander look
+- removed bevel around kicker for user request. i'll make that configurable with the next release.
+- improved header hover behaviour after scrolling (on slight speed loss) - however it's still not perfect. (header hovering is a bit a hack and qt seems to have a problem with updating the header position...)
+===========================================
++++ you can download the new enchicked wallpaper from here:
+http://stud.uni-karlsruhe.de/~uhvh/panther-jolene.png.bz2
+
+0.3e
+- added a slider to configure degree of saturation for icy buttons
+- forcing rect buttons now also affects combos - for a more consistent look...
+- menutranslucency improvement (1):
+  submenus won't be creatd multiple times, as long as lowest level menu is shown
+  this also holds (in most cases) for menubar-popups (e.g. when flying through your menus)
+- menutranslucency improvement (2):
+  BE BANISHED TO WHERE THOU CAMEST FROM, HELLISH GHASTLY GRIM GHOSTSHADOWS ON POPUPMENUS !!! :)
+  (also improves menu buildup speed, as they are partially taken out of memory. btw, how's kde 3.2 state on this? - still nice ghosts?:)
+  (notice: the function isn't perfect, yet: menus are not overcaptured, therefore menushadows will still draw (slim white) artefacts. Also, you can trick it if you don't move left - right, but follow a bow above the menubar, as then the pixmapbuffer probably will be deleted - i'll try to fix this in the next release. for the moment, need you for beta-testing. so please tell me, if you find more drawing errors!)
+
+0.3d
+- added more saturation to the icy buttons (icy buttons are now active by default - i think :)
+- again brighter shadows for buttons and combos
+- minor graphical changes (e.g. a toolbutton frame)
+- option to force rectangular buttons (sorry 'eggnogg' - combos as buttons looked really crap, especially when buttons and combos appear at the same time)
+- sunken button effect now wanted - therefore constant behaviour (they sometimes did funny things before)
+- some codeimprovements...
+- header + kicker (was there?) flicker resettled to nirvana
+- solved renderman's problem with disaligned submenu triangles (with massive help of renderman, to state this)
+- toolbuttons now also can have individual colors (affects e.g. korn)
+
+0.3c
+- changed look of smooth LVH (hope RenderMan can live with that now...) ;-)
+- no smooth LVH for kicker (looked crap because of the shadow)
+- new Images for the buttons (but of same style)
+- slightly reworked comboboxes (smoother shape, lighter shadow)
+- set toolbuttons back to iTunes style - independent of the smooth LVH (thanks to Ercin Eker for the hint)
+- added new widget coloring function (it's slower at app startup, but you'll need a profiler to notice that on a current computer)
+- new button pressing effect (to be honest, this happened due an accident - originally i wanted to use the outline as an alternative hover but set a wrong if check..., however it now looks like glow effect - tell me your opinion)
+
+for multiple request:
+============
+1. you can download binaries (NO WARRANTY they will work) from here:
+http://stud.uni-karlsruhe.de/~uhvh/baghira-binary.tar.bz2
+2. you can download the enchicked version of the wallpaper from here:
+http://stud.uni-karlsruhe.de/~uhvh/panther-padma.png.bz2
+
+0.3b
+- fixed menu translucency behaviour (veeeeeery stupid bug...)
+- flattened the menu indicator + use of highlightened text (blame or thank RenderMan...) :)
+- changed listheader indicator arrow
+- stipples aligned by default - also, removed brute force alignment (leads to some very unhappy errors) - if you seea widget, that is disharmonic stippled: just drop me a mail! (groupboxes work... partially) - therefore "Align Stipples" option is (currently) useless...
+- made and fixed a stupid bug tthat allmost costed my brain... ;-) (sometimes i'm really so stupid...)
+- rectangular combos (e.g. html) are now rather combos - not complete highlighted buttons
+- combos however are reworked and base upon their own pixmaps - not perfect at all... need better submittal?!
+- you (RenderMan) can activate smoother ListViewHeaders - basing upon the new combos...
+- fixed some minor bugs
+==================
+= REQUEST !!! =========
+==================
+Apple seems to use a nonlinear coloring process for buttons and stuff (e.g. light parts tend to be yellow).
+Mosfet's linear coloring function results in quite flat Buttons.
+If anyone can recommand good literature about coloring precesses - thanks ;-)
+=================================================================
+=================================================================
+
+0.3a
+heyheyhey... consistent source (./configure;make;make install from topdir)... finally. YEAHHH BABY!
+ok, now the important stuff:
+- tabs now also follow inactive button style
+- fixed a popupmenu bug (for aligned stipples)
+- reworked the polishment process -> should be much faster now, also lost some errors (e.g. open juk with 0.3, did nobody see this??? )
+- added icons for the kcmdialog - just copy the iconfolders in "icons" to your icon-directory
+- new "iTunes" styled rect buttons
+
+0.3
+- configdialog of course!
+- new centerd tabs (thanks to shm for the patch)
+- faster html (and other stuff?) scrolling
+- fixed color error to the toolbar
+- fixed major (but uncritical) bug to kicker (and child process) groupboxes
+- other stuff i forgot...
+================================================================================
+NOTES to configuration
+----------------------------------
+- usually inactive buttons follow the background: therefore they can appear flat to very bright backgrounds (on black backgrounds on the other hand you won't see them anymore)... try to set them to "original"
+- custom translucency doesn't work as it should (inverse behaviour, may overrun the defined area what leads to funny colors...)
+- stipple alignement is only partially implemented - therefore it's not really slow (but won't work on groupboxes)
+- centertabs should work on qt 3.1.2 and above. below this it's not tested (but may work anyway)
+- "fasten the filebrowser" will lead to a stippled background (if you use stipples) and will remove the possibility to choose custom backgrounds
+====================================================================================
+
+0.2b
+- Better Support for unstippled Background
+- No more flicker ?!
+- New Button behaviour (to hopefully get some feedback)
+- more graphical stuff corrected (eg line near groupboxes)
+- you now can configure the first items (kcm will follow soon, probably next few days)
+to ~/.qt/qtrc add and modify:
+
+[Baghira]
+drawDotlines=true
+drawGroupBoxShadow=true
+plusMinus=false
+squeezeSbSlider=true
+shadowSbSlider=false
+
+... not colors so far, as you would have to set hexdecimals...
+
+0.2a
+- Fixed some graphical... insufficiencies (thanks, craigD)
+- redid lines for listview so that Marcel can handle his massive email traffic again ;-)
+  (this will be choosable when the confdialog...)
+- also triangles should look a bit cleaner now
+- feedback for checkboxes and radiobuttons
+- shadowed groups now won't fall to button color if you use the button color for menus
+- about menu effects: fade in and animation happily works, as long as you don't use transparent menus
+  if you use transp menus, always the button color will be used for the effect. I *can* fix that - on a little speed loss.
+  However I do suggest to NOT use transparent menus with menu effects, as the menu will become more solid everytime you open it.
+  (Maybe I will support qt transparency for the unstippled menu in the future)
+
+
+
+0.2
+- new icons in listview (nice triangles instead of windows like '+' & '-', no lines)
+- 3d effect for editlines
+- removed shadows and annoying triangle from active button text
+- changed scrollbar -> hover effect (sunken when pushed), more grippy
+
+
+To the people who sign responsable for mosfet's parting:
+------------------------------------------------------------------------------------
+After working on mosfet's code for some days now, i think i'm really competent to say this.
+I do not know, what you did or said or just why - but hey: you stole us a really great coder... shame on you.
+
+
+mailto:baghira-style@gmx.net

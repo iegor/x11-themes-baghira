@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Link
+URL=
+Icon=bab_brushed
+Comment=Baghira Sidebar
+Name=baghirasidebar
+Name[xx]=xxbaghirasidebarxx
+
+Open=false
+X-KDE-KonqSidebarModule=konqsidebar_baghirasidebar
+

@@ -1,0 +1,40 @@
+<!DOCTYPE DCOP-IDL><DCOP-IDL>
+<SOURCE>./bab_iface.h</SOURCE>
+<INCLUDE>dcopobject.h</INCLUDE>
+<CLASS>
+    <NAME>babInterface</NAME>
+    <SUPER>DCOPObject</SUPER>
+    <FUNC>
+        <TYPE>void</TYPE>
+        <NAME>toggle</NAME>
+     </FUNC>
+    <FUNC>
+        <TYPE>QString</TYPE>
+        <NAME>style</NAME>
+     </FUNC>
+    <FUNC>
+        <TYPE>void</TYPE>
+        <NAME>setStyle</NAME>
+        <ARG><TYPE>QString</TYPE><NAME>state</NAME></ARG>
+     </FUNC>
+    <FUNC>
+        <TYPE>QString</TYPE>
+        <NAME>deco</NAME>
+     </FUNC>
+    <FUNC>
+        <TYPE>void</TYPE>
+        <NAME>setDeco</NAME>
+        <ARG><TYPE>QString</TYPE><NAME>state</NAME></ARG>
+     </FUNC>
+    <FUNC>
+        <TYPE>void</TYPE>
+        <NAME>start</NAME>
+        <ARG><TYPE>QString</TYPE><NAME>name</NAME></ARG>
+        <ARG><TYPE>QString</TYPE><NAME>settings</NAME></ARG>
+     </FUNC>
+    <FUNC>
+        <TYPE>void</TYPE>
+        <NAME>emitStyleChanged</NAME>
+     </FUNC>
+</CLASS>
+</DCOP-IDL>

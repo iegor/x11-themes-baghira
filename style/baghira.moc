@@ -1,0 +1,341 @@
+/****************************************************************************
+** OptionHandler meta object code from reading C++ file 'baghira.h'
+**
+** Created: Sun Apr 8 22:00:00 2012
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "baghira.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *OptionHandler::className() const
+{
+    return "OptionHandler";
+}
+
+QMetaObject *OptionHandler::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_OptionHandler( "OptionHandler", &OptionHandler::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString OptionHandler::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "OptionHandler", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString OptionHandler::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "OptionHandler", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* OptionHandler::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    static const QUMethod slot_0 = {"warningSlot", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "warningSlot()", &slot_0, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"OptionHandler", parentObject,
+	slot_tbl, 1,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_OptionHandler.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* OptionHandler::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "OptionHandler" ) )
+	return this;
+    return QObject::qt_cast( clname );
+}
+
+bool OptionHandler::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: warningSlot(); break;
+    default:
+	return QObject::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool OptionHandler::qt_emit( int _id, QUObject* _o )
+{
+    return QObject::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool OptionHandler::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool OptionHandler::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *EventKiller::className() const
+{
+    return "EventKiller";
+}
+
+QMetaObject *EventKiller::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_EventKiller( "EventKiller", &EventKiller::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString EventKiller::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "EventKiller", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString EventKiller::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "EventKiller", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* EventKiller::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"EventKiller", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_EventKiller.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* EventKiller::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "EventKiller" ) )
+	return this;
+    return QObject::qt_cast( clname );
+}
+
+bool EventKiller::qt_invoke( int _id, QUObject* _o )
+{
+    return QObject::qt_invoke(_id,_o);
+}
+
+bool EventKiller::qt_emit( int _id, QUObject* _o )
+{
+    return QObject::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool EventKiller::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool EventKiller::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *BMShower::className() const
+{
+    return "BMShower";
+}
+
+QMetaObject *BMShower::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_BMShower( "BMShower", &BMShower::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString BMShower::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "BMShower", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString BMShower::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "BMShower", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* BMShower::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"BMShower", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_BMShower.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* BMShower::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "BMShower" ) )
+	return this;
+    return QObject::qt_cast( clname );
+}
+
+bool BMShower::qt_invoke( int _id, QUObject* _o )
+{
+    return QObject::qt_invoke(_id,_o);
+}
+
+bool BMShower::qt_emit( int _id, QUObject* _o )
+{
+    return QObject::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool BMShower::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool BMShower::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *LiquidStyle::className() const
+{
+    return "LiquidStyle";
+}
+
+QMetaObject *LiquidStyle::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_LiquidStyle( "LiquidStyle", &LiquidStyle::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString LiquidStyle::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "LiquidStyle", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString LiquidStyle::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "LiquidStyle", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* LiquidStyle::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KStyle::staticMetaObject();
+    static const QUMethod slot_0 = {"updateProgressPos", 0, 0 };
+    static const QUMethod slot_1 = {"updateSliderPos", 0, 0 };
+    static const QUParameter param_slot_2[] = {
+	{ 0, &static_QUType_ptr, "QObject", QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"progressBarDestroyed", 1, param_slot_2 };
+    static const QUMethod slot_3 = {"fakeMouse", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "updateProgressPos()", &slot_0, QMetaData::Private },
+	{ "updateSliderPos()", &slot_1, QMetaData::Private },
+	{ "progressBarDestroyed(QObject*)", &slot_2, QMetaData::Private },
+	{ "fakeMouse()", &slot_3, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"LiquidStyle", parentObject,
+	slot_tbl, 4,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_LiquidStyle.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* LiquidStyle::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "LiquidStyle" ) )
+	return this;
+    return KStyle::qt_cast( clname );
+}
+
+bool LiquidStyle::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: updateProgressPos(); break;
+    case 1: updateSliderPos(); break;
+    case 2: progressBarDestroyed((QObject*)static_QUType_ptr.get(_o+1)); break;
+    case 3: fakeMouse(); break;
+    default:
+	return KStyle::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool LiquidStyle::qt_emit( int _id, QUObject* _o )
+{
+    return KStyle::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool LiquidStyle::qt_property( int id, int f, QVariant* v)
+{
+    return KStyle::qt_property( id, f, v);
+}
+
+bool LiquidStyle::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

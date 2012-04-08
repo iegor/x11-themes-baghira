@@ -1,0 +1,586 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>CustomDecoSettings</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>CustomDecoSettings</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>416</width>
+            <height>325</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>CustomDecoSettings</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox" row="5" column="0" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>boxCorner</cstring>
+            </property>
+            <property name="title">
+                <string>Round Corners</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0" rowspan="3" colspan="1">
+                    <property name="name">
+                        <cstring>layout45</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>shapeUL</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer16</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>31</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>shapeLL</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <widget class="QLayoutWidget" row="0" column="5" rowspan="3" colspan="1">
+                    <property name="name">
+                        <cstring>layout44</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>shapeUR</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer17</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>31</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>shapeLR</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <spacer row="1" column="4">
+                    <property name="name">
+                        <cstring>spacer24_3</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>60</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QSpinBox" row="1" column="3">
+                    <property name="name">
+                        <cstring>borderSize</cstring>
+                    </property>
+                    <property name="maxValue">
+                        <number>16</number>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="1" column="2">
+                    <property name="name">
+                        <cstring>labelBorderSize</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Border Size</string>
+                    </property>
+                </widget>
+                <spacer row="0" column="2">
+                    <property name="name">
+                        <cstring>spacer27_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <spacer row="2" column="2">
+                    <property name="name">
+                        <cstring>spacer27</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <spacer row="1" column="1">
+                    <property name="name">
+                        <cstring>spacer15</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="4" column="0" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>layout10</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>labelTitleshadow</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Titleshadow Intensity</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer5</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>61</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>LineImpact</cstring>
+                    </property>
+                    <property name="buttonSymbols">
+                        <enum>UpDownArrows</enum>
+                    </property>
+                    <property name="maxValue">
+                        <number>100</number>
+                    </property>
+                    <property name="value">
+                        <number>40</number>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="3" column="0" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>layout7_3</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>label3D</cstring>
+                    </property>
+                    <property name="text">
+                        <string>3D Intensity</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer4_3</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>200</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>_3DImpact</cstring>
+                    </property>
+                    <property name="maxValue">
+                        <number>100</number>
+                    </property>
+                    <property name="value">
+                        <number>20</number>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="0">
+            <property name="name">
+                <cstring>layout35</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>labelButtonstyle</cstring>
+                    </property>
+                    <property name="text">
+                        <string>ButtonStyle</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>labelTitle</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Active Titlebar Effect</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>titleeffect</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>labelInTitle</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Inactive Titlebar Effect</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>titleeffect</cstring>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="4">
+            <property name="name">
+                <cstring>layout38</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>labelColors</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Colors</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout33</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="KColorButton">
+                            <property name="name">
+                                <cstring>activeColor1</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="KColorButton">
+                            <property name="name">
+                                <cstring>activeColor2</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout34</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="KColorButton">
+                            <property name="name">
+                                <cstring>inactiveColor1</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="KColorButton">
+                            <property name="name">
+                                <cstring>inactiveColor2</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="2" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>layout39</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QComboBox">
+                    <item>
+                        <property name="text">
+                            <string>Panther</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Jaguar</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Milk</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Nostalgia</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>buttonStyle</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <item>
+                        <property name="text">
+                            <string>Gradient</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Stippled</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Nostalgia</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Glossy</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Brushed</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Scanlines</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>titleeffect</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>22</height>
+                        </size>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                        <string>Select an effect for the titlebar to change its appearance</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <item>
+                        <property name="text">
+                            <string>Gradient</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Stippled</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Nostalgia</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Glossy</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Brushed</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Scanlines</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>i_titleeffect</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>22</height>
+                        </size>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                        <string>Select an effect for the titlebar to change its appearance</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <spacer row="2" column="1">
+            <property name="name">
+                <cstring>spacer18_2_3</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>16</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QCheckBox" row="1" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>drawIcon</cstring>
+            </property>
+            <property name="text">
+                <string>Draw Icon</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>DecoName</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>14</pointsize>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="text">
+                <string>Name</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+</customwidgets>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>kcolorbutton.h</includehint>
+    <includehint>kcolorbutton.h</includehint>
+    <includehint>kcolorbutton.h</includehint>
+    <includehint>kcolorbutton.h</includehint>
+</includehints>
+</UI>

@@ -1,0 +1,264 @@
+/****************************************************************************
+** BabSwitcher meta object code from reading C++ file 'bab.h'
+**
+** Created: Sun Apr 8 21:55:40 2012
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "bab.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *BabSwitcher::className() const
+{
+    return "BabSwitcher";
+}
+
+QMetaObject *BabSwitcher::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_BabSwitcher( "BabSwitcher", &BabSwitcher::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString BabSwitcher::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "BabSwitcher", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString BabSwitcher::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "BabSwitcher", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* BabSwitcher::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KSystemTray::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"BabSwitcher", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_BabSwitcher.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* BabSwitcher::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "BabSwitcher" ) )
+	return this;
+    if ( !qstrcmp( clname, "babInterface" ) )
+	return (babInterface*)this;
+    return KSystemTray::qt_cast( clname );
+}
+
+bool BabSwitcher::qt_invoke( int _id, QUObject* _o )
+{
+    return KSystemTray::qt_invoke(_id,_o);
+}
+
+bool BabSwitcher::qt_emit( int _id, QUObject* _o )
+{
+    return KSystemTray::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool BabSwitcher::qt_property( int id, int f, QVariant* v)
+{
+    return KSystemTray::qt_property( id, f, v);
+}
+
+bool BabSwitcher::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *bab::className() const
+{
+    return "bab";
+}
+
+QMetaObject *bab::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_bab( "bab", &bab::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString bab::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "bab", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString bab::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "bab", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* bab::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KMainWindow::staticMetaObject();
+    static const QUMethod slot_0 = {"saveSettings", 0, 0 };
+    static const QUMethod slot_1 = {"configureBaghira", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "saveSettings()", &slot_0, QMetaData::Private },
+	{ "configureBaghira()", &slot_1, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"bab", parentObject,
+	slot_tbl, 2,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_bab.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* bab::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "bab" ) )
+	return this;
+    return KMainWindow::qt_cast( clname );
+}
+
+bool bab::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: saveSettings(); break;
+    case 1: configureBaghira(); break;
+    default:
+	return KMainWindow::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool bab::qt_emit( int _id, QUObject* _o )
+{
+    return KMainWindow::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool bab::qt_property( int id, int f, QVariant* v)
+{
+    return KMainWindow::qt_property( id, f, v);
+}
+
+bool bab::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *Corner::className() const
+{
+    return "Corner";
+}
+
+QMetaObject *Corner::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Corner( "Corner", &Corner::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Corner::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Corner", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Corner::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Corner", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Corner::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"toggle", 1, param_slot_0 };
+    static const QMetaData slot_tbl[] = {
+	{ "toggle(bool)", &slot_0, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Corner", parentObject,
+	slot_tbl, 1,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Corner.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Corner::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Corner" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool Corner::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: toggle((bool)static_QUType_bool.get(_o+1)); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Corner::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Corner::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool Corner::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

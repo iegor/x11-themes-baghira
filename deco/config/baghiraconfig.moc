@@ -1,0 +1,252 @@
+/****************************************************************************
+** ButtonColors meta object code from reading C++ file 'baghiraconfig.h'
+**
+** Created: Sun Apr 8 21:58:35 2012
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "baghiraconfig.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *ButtonColors::className() const
+{
+    return "ButtonColors";
+}
+
+QMetaObject *ButtonColors::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_ButtonColors( "ButtonColors", &ButtonColors::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString ButtonColors::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ButtonColors", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString ButtonColors::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ButtonColors", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* ButtonColors::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QDialog::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"setColorGroup", 1, param_slot_0 };
+    static const QUMethod slot_1 = {"init", 0, 0 };
+    static const QUMethod slot_2 = {"activateInactive", 0, 0 };
+    static const QUMethod slot_3 = {"activateClose", 0, 0 };
+    static const QUMethod slot_4 = {"activateMin", 0, 0 };
+    static const QUMethod slot_5 = {"activateMax", 0, 0 };
+    static const QUMethod slot_6 = {"activateMenu", 0, 0 };
+    static const QUMethod slot_7 = {"activateHelp", 0, 0 };
+    static const QUMethod slot_8 = {"activateSticky", 0, 0 };
+    static const QUMethod slot_9 = {"activateAbove", 0, 0 };
+    static const QUMethod slot_10 = {"activateBehind", 0, 0 };
+    static const QUMethod slot_11 = {"activateShade", 0, 0 };
+    static const QUMethod slot_12 = {"setSave", 0, 0 };
+    static const QUMethod slot_13 = {"reset", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "setColorGroup(int)", &slot_0, QMetaData::Public },
+	{ "init()", &slot_1, QMetaData::Public },
+	{ "activateInactive()", &slot_2, QMetaData::Private },
+	{ "activateClose()", &slot_3, QMetaData::Private },
+	{ "activateMin()", &slot_4, QMetaData::Private },
+	{ "activateMax()", &slot_5, QMetaData::Private },
+	{ "activateMenu()", &slot_6, QMetaData::Private },
+	{ "activateHelp()", &slot_7, QMetaData::Private },
+	{ "activateSticky()", &slot_8, QMetaData::Private },
+	{ "activateAbove()", &slot_9, QMetaData::Private },
+	{ "activateBehind()", &slot_10, QMetaData::Private },
+	{ "activateShade()", &slot_11, QMetaData::Private },
+	{ "setSave()", &slot_12, QMetaData::Private },
+	{ "reset()", &slot_13, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"ButtonColors", parentObject,
+	slot_tbl, 14,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_ButtonColors.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* ButtonColors::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "ButtonColors" ) )
+	return this;
+    return QDialog::qt_cast( clname );
+}
+
+bool ButtonColors::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: setColorGroup((int)static_QUType_int.get(_o+1)); break;
+    case 1: init(); break;
+    case 2: activateInactive(); break;
+    case 3: activateClose(); break;
+    case 4: activateMin(); break;
+    case 5: activateMax(); break;
+    case 6: activateMenu(); break;
+    case 7: activateHelp(); break;
+    case 8: activateSticky(); break;
+    case 9: activateAbove(); break;
+    case 10: activateBehind(); break;
+    case 11: activateShade(); break;
+    case 12: setSave(); break;
+    case 13: reset(); break;
+    default:
+	return QDialog::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool ButtonColors::qt_emit( int _id, QUObject* _o )
+{
+    return QDialog::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool ButtonColors::qt_property( int id, int f, QVariant* v)
+{
+    return QDialog::qt_property( id, f, v);
+}
+
+bool ButtonColors::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *BaghiraConfig::className() const
+{
+    return "BaghiraConfig";
+}
+
+QMetaObject *BaghiraConfig::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_BaghiraConfig( "BaghiraConfig", &BaghiraConfig::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString BaghiraConfig::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "BaghiraConfig", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString BaghiraConfig::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "BaghiraConfig", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* BaghiraConfig::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QObject::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "conf", &static_QUType_ptr, "KConfig", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"load", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "conf", &static_QUType_ptr, "KConfig", QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"save", 1, param_slot_1 };
+    static const QUMethod slot_2 = {"defaults", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "load(KConfig*)", &slot_0, QMetaData::Public },
+	{ "save(KConfig*)", &slot_1, QMetaData::Public },
+	{ "defaults()", &slot_2, QMetaData::Public }
+    };
+    static const QUMethod signal_0 = {"changed", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "changed()", &signal_0, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"BaghiraConfig", parentObject,
+	slot_tbl, 3,
+	signal_tbl, 1,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_BaghiraConfig.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* BaghiraConfig::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "BaghiraConfig" ) )
+	return this;
+    return QObject::qt_cast( clname );
+}
+
+// SIGNAL changed
+void BaghiraConfig::changed()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+bool BaghiraConfig::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: load((KConfig*)static_QUType_ptr.get(_o+1)); break;
+    case 1: save((KConfig*)static_QUType_ptr.get(_o+1)); break;
+    case 2: defaults(); break;
+    default:
+	return QObject::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool BaghiraConfig::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: changed(); break;
+    default:
+	return QObject::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool BaghiraConfig::qt_property( int id, int f, QVariant* v)
+{
+    return QObject::qt_property( id, f, v);
+}
+
+bool BaghiraConfig::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

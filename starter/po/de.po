@@ -1,0 +1,351 @@
+# translation of de.po to German
+# translation of starter.po to German
+# This file is put in the public domain.
+# Thomas Lübking <thomas.luebking@web.de>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: de\n"
+"POT-Creation-Date: 2005-07-19 21:15+0200\n"
+"PO-Revision-Date: 2005-07-19 22:15+0200\n"
+"Last-Translator: Thomas Lübking <thomas.luebking@web.de>\n"
+"Language-Team: German <de@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10\n"
+
+#. i18n: file buttons.ui line 16
+#: buttons.cpp:98 rc.cpp:3 rc.cpp:141
+#, no-c-format
+msgid "Select Button Images"
+msgstr "Skins auswählen"
+
+#. i18n: file buttons.ui line 103
+#: buttons.cpp:103 rc.cpp:14 rc.cpp:152
+#, no-c-format
+msgid "<b>Down</b>"
+msgstr "Gedrückt"
+
+#. i18n: file buttons.ui line 111
+#: buttons.cpp:104 rc.cpp:17 rc.cpp:155
+#, no-c-format
+msgid "<b>Hover</b>"
+msgstr "Unter Maus"
+
+#. i18n: file buttons.ui line 119
+#: buttons.cpp:105 rc.cpp:20 rc.cpp:158
+#, no-c-format
+msgid "<b>Base</b>"
+msgstr "Normal"
+
+#. i18n: file config.ui line 16
+#: config.cpp:285 menu.cpp:419 rc.cpp:23 rc.cpp:161
+#, no-c-format
+msgid "New Entry"
+msgstr "Neue Verknüpfung"
+
+#. i18n: file config.ui line 47
+#: config.cpp:287 rc.cpp:29 rc.cpp:167
+#, no-c-format
+msgid "F1"
+msgstr ""
+
+#. i18n: file config.ui line 108
+#: config.cpp:292 rc.cpp:40 rc.cpp:178
+#, no-c-format
+msgid "Extended Mode"
+msgstr "Erweiterte Einstellungen"
+
+#. i18n: file config.ui line 122
+#: config.cpp:293 rc.cpp:43 rc.cpp:181
+#, no-c-format
+msgid "Basic Settings"
+msgstr "Basiseinstellungen"
+
+#. i18n: file config.ui line 153
+#: config.cpp:294 rc.cpp:46 rc.cpp:184
+#, no-c-format
+msgid "Is a"
+msgstr "Ist ein"
+
+#. i18n: file config.ui line 218
+#: config.cpp:296 rc.cpp:50 rc.cpp:188
+#, no-c-format
+msgid "<b>Command</b>"
+msgstr "<b>Kommando</b>"
+
+#. i18n: file config.ui line 226
+#: config.cpp:297 rc.cpp:53 rc.cpp:191
+#, no-c-format
+msgid "<i>Keywords</i>"
+msgstr "<i>Schlüsselworte</i>"
+
+#. i18n: file config.ui line 234
+#: config.cpp:298 rc.cpp:56 rc.cpp:194
+#, no-c-format
+msgid "<i><b>Name</b></i>"
+msgstr "<i><b>Name</b></i>"
+
+#. i18n: file config.ui line 242
+#: config.cpp:299 rc.cpp:59 rc.cpp:197
+#, no-c-format
+msgid "<i><b>Category</b></i>"
+msgstr "<i><b>Kategorie</b></i>"
+
+#. i18n: file config.ui line 255
+#: config.cpp:300 rc.cpp:62 rc.cpp:200
+#, no-c-format
+msgid "Activate startup feedback"
+msgstr "Startrückmeldung aktivieren"
+
+#. i18n: file config.ui line 263
+#: config.cpp:301 rc.cpp:65 rc.cpp:203
+#, no-c-format
+msgid "Show in system tray"
+msgstr "Im Systray anzeigen"
+
+#. i18n: file config.ui line 290
+#: config.cpp:302 rc.cpp:68 rc.cpp:206
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. i18n: file config.ui line 314
+#: config.cpp:303 rc.cpp:71 rc.cpp:209
+#, no-c-format
+msgid "Extended Settings"
+msgstr "Erweiterte Einstellungen"
+
+#. i18n: file config.ui line 325
+#: config.cpp:304 rc.cpp:74 rc.cpp:212
+#, no-c-format
+msgid "Working directory"
+msgstr "Arbeitsverzeichnis"
+
+#. i18n: file config.ui line 347
+#: config.cpp:305 rc.cpp:77 rc.cpp:215
+#, no-c-format
+msgid "Start in terminal"
+msgstr "Im Terminal ausführen"
+
+#. i18n: file config.ui line 358
+#: config.cpp:306 rc.cpp:80 rc.cpp:218
+#, no-c-format
+msgid "Terminal settings"
+msgstr "Terminal Einstellungen"
+
+#. i18n: file config.ui line 388
+#: config.cpp:307 rc.cpp:83 rc.cpp:221
+#, no-c-format
+msgid "Start as different user"
+msgstr "Als anderer Benutzer starten"
+
+#. i18n: file config.ui line 399
+#: config.cpp:308 rc.cpp:86 rc.cpp:224
+#, no-c-format
+msgid "Username"
+msgstr "Benutzername"
+
+#. i18n: file config.ui line 429
+#: config.cpp:309 rc.cpp:89 rc.cpp:227
+#, no-c-format
+msgid "Shortcut"
+msgstr "Tastenkürzel"
+
+#. i18n: file config.ui line 459
+#: config.cpp:310 rc.cpp:92 rc.cpp:230
+#, no-c-format
+msgid "None"
+msgstr ""
+
+#. i18n: file help.ui line 73
+#: help.cpp:72 rc.cpp:98 rc.cpp:236
+#, no-c-format
+msgid ""
+"<p align=\"center\"><font size=\"+3\"><b>Menu entry editor</b></font></p>\n"
+"<p align=\"center"
+"\">----------------------------------------------------------------------------------"
+"</p>\n"
+"<h3>Introduction</h3>\n"
+"\n"
+"By default, you will only see the basic settings for the new entry. Clicking "
+"\"Show More\" will give you access to some extended settings that can be "
+"interesting but mostly useless for you.<br><br>\n"
+"<b>Bold options must be entered</b> for a usefull entry, i<i>talic ones are "
+"respected by the search feature</i>.\n"
+"<br><br>\n"
+"<h3>Basic settings</h3>\n"
+"\n"
+"<b>Name:</b><br>\n"
+"This is the visible name of your new entry and can be any string, e.g. \"The "
+"Gimp\".<br>\n"
+"(Necessary, searchkey)\n"
+"<br><br>\n"
+"<b>Is a:</b><br>\n"
+"Describes the applications genre (generic name), e.g. \"Image manipulation"
+"\"<br>\n"
+"(Optional, yet not searched - maybe later)\n"
+"<br><br>\n"
+"<b>Category:</b><br>\n"
+"Choose an existing group or add a new one. The hierarchy is represented by "
+"seperating slashes (\"/\"), if you want to enter a slash, you must escape it "
+"(\"\\/\")<br>\n"
+"(Necessary, searchkey)\n"
+"<br><br>\n"
+"<b>Command:</b><br>\n"
+"The command to start the application, e.g. \"gimp-remote\". On *nix systems, "
+"is usually not necessary to pass the full path to the executably, but you "
+"can do so, if you want to start an executable that is shadowed by the "
+"executable in the path dir, e.g. \"/usr/local/gimp-1.3/gimp-remote\"<br>\n"
+"(Necessary, not searched)\n"
+"<br><br>\n"
+"<b>Keywords:</b><br>\n"
+"Comma separated list of keywords that refer to this application during "
+"search, e.g. \"image manipulation,pixel,photoshop\".<br>\n"
+"Please note:<br>\n"
+"1. search is <i>not</i> case sensitive<br>\n"
+"2. search finds partial matches, so it's <i>not</i> necessary to add e.g. "
+"\"image,image manipulation\"<br>\n"
+"3. different from the applications name, the keyword list will be translated "
+"(if) so if you think like \"'KImage' allready contains 'image', so i don't "
+"need it as keyword\" <b>you're wrong!</b><br>\n"
+"4. Finding good keywords is not simple, but in general use striking ones! "
+"\"editor\" is not a very good keyword, as allmost everything is an editor. "
+"(Gimp is a pixel-editor, KHexedit is a hex-editor, KEdit is a text-editor, a "
+"config dialog is a config-editor, ...)<br>\n"
+"(Optional, searchkey)\n"
+"<br><br>\n"
+"<b>Description:</b><br>\n"
+"This is the longtext description of your application (not a helptext, "
+"though ;), e.g. \"A powerfull image manipulator with a UI similar to "
+"photoshop. Supports Layers, filters, scripting, blahblahblah...\"\n"
+"You can use Qt richtext tags and there's no limit on the size, but keep it "
+"usefull ;) let's say something about 200 chars at max.<br>\n"
+"(Optional, not searched)"
+msgstr ""
+"<p align=\"center\"><font size=\"+3\"><b>Verknüpfungseditor</b></font></p>\n"
+"<p align=\"center"
+"\">----------------------------------------------------------------------------------"
+"</p>\n"
+"<h3>Einführung</h3>\n"
+"\n"
+"Standardmäßig werden nur die Basiseinstellungen für die neue Verknüpfung angezeigt. Indem man auf \"Erweiterte Einstellungen\" clickt, erhält man Zugriff auf einige weniger gebräuchliche Optionen.<br><br>\n"
+"<b>Fettgedruckte Felder müssen</b> für eine brauchbare Verknüpfung ausgefüllt werden, <i>kursive werden von der Suchfunktion berücksichtigt</i>.\n"
+"<br><br>\n"
+"<h3>Basiseinstellungen</h3>\n"
+"\n"
+"<b>Name:</b><br>\n"
+"Der sichtbare Name der Verknüpfung. Jede Zeichenkette ist erlaubt, z.B.\"The "
+"Gimp\".<br>\n"
+"(Notwendig, Suchschlüssel)\n"
+"<br><br>\n"
+"<b>Ist ein:</b><br>\n"
+"Das Genre der Anwendung (genericName), z.B. \"Bildbearbeitung"
+"\"<br>\n"
+"(Optional, derzeit nicht bei der Suche berücksichtigt)\n"
+"<br><br>\n"
+"<b>Kategorie:</b><br>\n"
+"Wählen Sie eine existierende Gruppe oder fügen sie eine neue hinzu. Die Hierarchie wird durch den \"/\" als Trennzeichen gekennzeichnet,wenn \"/\" Teil des Namens sein soll, muß ein \"\\\" vorangestellt werden (\"\\/\")<br>\n"
+"(Notwendig, Suchschlüssel (Der übersetzte Begriff))\n"
+"<br><br>\n"
+"<b>Kommando:</b><br>\n"
+"Das Kommando zum starten der Anwendung, z.B. \"gimp-remote\". Auf *nix Systemen ist es normalerweise nicht notwendig den vollen Pfad anzugeben, aber Sie können das tun, um eine Anwendung zu starten die durch eine andere überlagert wird, z.B. \"/usr/local/gimp-1.3/gimp-remote\"<br>\n"
+"(Notewndig, nicht durchsucht)\n"
+"<br><br>\n"
+"<b>Schlüsselworte:</b><br>\n"
+"Kommagetrennte Liste von Schlüsselworten für diese Anwendung, z.B. \"bildbearbeitung,pixel,photoshop\".<br>\n"
+"Anmerkungen:<br>\n"
+"1. Die Suche unterscheidet nicht zwischen GROSS und kleinschreibung<br>\n"
+"2. Die Suche findet auch Teilbegriffe, es ist also <i>nicht</i> notwendig z.B.\"Bild,Bildbearbeitung\" einzutragen<br>\n"
+"3. Anders als der Name der Anwendung, werden die Schlüssel übersetzt (wenn).- KImage hätte zwar \"image\" als schlüsselwort, aber nicht \"bild\"<br>\n"
+"4. Die Suche nach guten Schlüsselworten ist nicht immer leicht, aber sie sollten vor allem aussagekräftig sein!"
+"\"editor\" ist kein besonders gutes Schlüsselwort, denn fast alles ist irgendwie ein Editor."
+"(Gimp ist ein Pixel-Editor, KHexedit ist ein Hex-Editor, KEdit ist ein Text-Editor, ein Konfigurationsdialog ist ein Config-Editor, ...)<br>\n"
+"(Optional, Suchschlüssel)\n"
+"<br><br>\n"
+"<b>Beschreibung:</b><br>\n"
+"Die (längere) Beschreibung der Anwendung (aber kein Hilfetext ;), z.B. \"Eine mächtige Bildbearbeitung mit einer Photoshop ähnlichen Oberfläche. Unterstützt Ebenen, Filter, Scripte, blahblahblah...\"\n"
+"Sie können Qt RichText tags verwenden und die Zeichenlänge ist nicht limitiert, sollte aber im vernünftigen Rahmen gehelten werden - maximal 200 Zeichen.<br>\n"
+"(Optional, nicht durchsucht)"
+
+#: menu.cpp:307
+msgid ""
+"for TTS output, telling which item is focussed (keyboard) and than reads the "
+"comment"
+msgstr ""
+
+#: menu.cpp:338
+msgid ""
+"for TTS output, telling which item is hovered (mouse) and than reads the "
+"comment"
+msgstr ""
+
+#: menu.cpp:392 menu.cpp:483
+msgid "Edit Entry"
+msgstr "Verknüpfung modifizieren..."
+
+#: menu.cpp:393
+msgid "Remove Entry"
+msgstr "Verknüpfung entfernen..."
+
+#: menu.cpp:395
+msgid "Add Entry"
+msgstr "Neue Verknüpfung..."
+
+#: menu.cpp:446
+msgid "<qt>Are you sure you want to remove<br> %1</qt>"
+msgstr "<qt>Sind Sie sicher, daß sie <br> %1 <br> eintfernen möchten?</qt>"
+
+#: menu.cpp:446
+msgid "Remove ALI entry"
+msgstr "ALI Verknüpung entfernen"
+
+#: menu.cpp:614
+msgid "<qt><b>First Session Applications</b></qt>"
+msgstr "<qt><b>Erstbenutzer Anwendungen</b></qt>"
+
+#: menu.cpp:620 menu.cpp:882 menu.cpp:954
+msgid "<qt><b>Favorite Applications</b><br></qt>"
+msgstr "<qt><b>Beliebte Anwendungen</b><br></qt>"
+
+#: menu.cpp:872
+msgid ""
+"for TTS output, informs the user that no entries are in the currently "
+"selected group"
+msgstr ""
+
+#: menu.cpp:939
+msgid "for TTS output, no entries match the current search text"
+msgstr ""
+
+#: menu.cpp:953
+msgid ""
+"<qt><b>First Session Applications</b><br>This is a list of Applications you "
+"might want to try out</qt>"
+msgstr ""
+
+#: menu.cpp:1049
+msgid "Lock Session"
+msgstr ""
+
+#: menu.cpp:1056
+msgid "Switch User"
+msgstr ""
+
+#: menu.cpp:1062
+msgid "Logout"
+msgstr ""
+
+#: menu.cpp:1160
+msgid "Type to search or enter a command"
+msgstr "Tippen sie, um zu suchen oder ein Kommando direkt einzugeben"
+
+#: menu.cpp:1326
+msgid "TTS output"
+msgstr ""
+
+#: starter.cpp:43
+msgid "Select Button Images ..."
+msgstr "Skins auswählen..."
+

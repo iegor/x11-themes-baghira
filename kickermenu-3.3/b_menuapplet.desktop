@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Baghira Menu
+Comment=Applet embedding standalone menubars (Patched baghira version)
+
+Icon=menu
+
+X-KDE-Library=b_menu_panelapplet
+X-KDE-UniqueApplet=true

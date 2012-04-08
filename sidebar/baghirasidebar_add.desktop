@@ -1,0 +1,10 @@
+[Desktop Entry]
+Comment=Baghira Sidebar
+Encoding=UTF-8
+Icon=filetypes
+Name=Add Baghira Sidebar
+Name[de]=Baghira Sideabr hinzufügen
+Open=false
+Type=Link
+URL=
+X-KDE-KonqSidebarAddModule=konqsidebar_baghirasidebar

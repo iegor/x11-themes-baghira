@@ -1,0 +1,6 @@
+[Misc]
+Name=Baghira
+Comment=The Big Black Cat
+ConfigPage=kstyle_baghira_config
+[KDE]
+WidgetStyle=Baghira

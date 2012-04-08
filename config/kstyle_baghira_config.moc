@@ -1,0 +1,425 @@
+/****************************************************************************
+** kstyle_baghira_config meta object code from reading C++ file 'kstyle_baghira_config.h'
+**
+** Created: Sun Apr 8 21:58:24 2012
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "kstyle_baghira_config.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *kstyle_baghira_config::className() const
+{
+    return "kstyle_baghira_config";
+}
+
+QMetaObject *kstyle_baghira_config::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_kstyle_baghira_config( "kstyle_baghira_config", &kstyle_baghira_config::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString kstyle_baghira_config::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "kstyle_baghira_config", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString kstyle_baghira_config::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "kstyle_baghira_config", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* kstyle_baghira_config::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUMethod slot_0 = {"configChanged", 0, 0 };
+    static const QUMethod slot_1 = {"openHtml1", 0, 0 };
+    static const QUMethod slot_2 = {"openHtml2", 0, 0 };
+    static const QUMethod slot_3 = {"startBab", 0, 0 };
+    static const QUMethod slot_4 = {"startKRuler", 0, 0 };
+    static const QUParameter param_slot_5[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_5 = {"sliderButtonRedChanged", 1, param_slot_5 };
+    static const QUParameter param_slot_6[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_6 = {"sliderButtonGreenChanged", 1, param_slot_6 };
+    static const QUParameter param_slot_7[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_7 = {"sliderButtonBlueChanged", 1, param_slot_7 };
+    static const QUParameter param_slot_8[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_8 = {"sliderBrushRedChanged", 1, param_slot_8 };
+    static const QUParameter param_slot_9[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_9 = {"sliderBrushGreenChanged", 1, param_slot_9 };
+    static const QUParameter param_slot_10[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_10 = {"sliderBrushBlueChanged", 1, param_slot_10 };
+    static const QUMethod slot_11 = {"save", 0, 0 };
+    static const QUMethod slot_12 = {"defaults", 0, 0 };
+    static const QUMethod slot_13 = {"updateCR", 0, 0 };
+    static const QUMethod slot_14 = {"showAbout", 0, 0 };
+    static const QUMethod slot_15 = {"editApp", 0, 0 };
+    static const QUParameter param_slot_16[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_16 = {"addApp", 2, param_slot_16 };
+    static const QUMethod slot_17 = {"removeApp", 0, 0 };
+    static const QUParameter param_slot_18[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_18 = {"removeApp", 1, param_slot_18 };
+    static const QUParameter param_slot_19[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_19 = {"setDesign", 1, param_slot_19 };
+    static const QUParameter param_slot_20[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_20 = {"menuToggled", 1, param_slot_20 };
+    static const QUParameter param_slot_21[] = {
+	{ "d", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_21 = {"enableInButtonColor", 1, param_slot_21 };
+    static const QUParameter param_slot_22[] = {
+	{ "d", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_22 = {"enableMenuColorStuff", 1, param_slot_22 };
+    static const QUMethod slot_23 = {"buttonLoadAction", 0, 0 };
+    static const QUMethod slot_24 = {"buttonSaveAsAction", 0, 0 };
+    static const QUParameter param_slot_25[] = {
+	{ "i", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_25 = {"setPresetColor", 1, param_slot_25 };
+    static const QUMethod slot_26 = {"selectWindow", 0, 0 };
+    static const QUParameter param_slot_27[] = {
+	{ 0, &static_QUType_varptr, "\x0a", QUParameter::In }
+    };
+    static const QUMethod slot_27 = {"changeTooluttonHighlightColor", 1, param_slot_27 };
+    static const QUParameter param_slot_28[] = {
+	{ "i", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_28 = {"handleButtonStyles", 1, param_slot_28 };
+    static const QMetaData slot_tbl[] = {
+	{ "configChanged()", &slot_0, QMetaData::Public },
+	{ "openHtml1()", &slot_1, QMetaData::Public },
+	{ "openHtml2()", &slot_2, QMetaData::Public },
+	{ "startBab()", &slot_3, QMetaData::Public },
+	{ "startKRuler()", &slot_4, QMetaData::Public },
+	{ "sliderButtonRedChanged(int)", &slot_5, QMetaData::Public },
+	{ "sliderButtonGreenChanged(int)", &slot_6, QMetaData::Public },
+	{ "sliderButtonBlueChanged(int)", &slot_7, QMetaData::Public },
+	{ "sliderBrushRedChanged(int)", &slot_8, QMetaData::Public },
+	{ "sliderBrushGreenChanged(int)", &slot_9, QMetaData::Public },
+	{ "sliderBrushBlueChanged(int)", &slot_10, QMetaData::Public },
+	{ "save()", &slot_11, QMetaData::Public },
+	{ "defaults()", &slot_12, QMetaData::Public },
+	{ "updateCR()", &slot_13, QMetaData::Private },
+	{ "showAbout()", &slot_14, QMetaData::Private },
+	{ "editApp()", &slot_15, QMetaData::Private },
+	{ "addApp(QString,QString)", &slot_16, QMetaData::Private },
+	{ "removeApp()", &slot_17, QMetaData::Private },
+	{ "removeApp(QString)", &slot_18, QMetaData::Private },
+	{ "setDesign(int)", &slot_19, QMetaData::Private },
+	{ "menuToggled(bool)", &slot_20, QMetaData::Private },
+	{ "enableInButtonColor(int)", &slot_21, QMetaData::Private },
+	{ "enableMenuColorStuff(int)", &slot_22, QMetaData::Private },
+	{ "buttonLoadAction()", &slot_23, QMetaData::Private },
+	{ "buttonSaveAsAction()", &slot_24, QMetaData::Private },
+	{ "setPresetColor(int)", &slot_25, QMetaData::Private },
+	{ "selectWindow()", &slot_26, QMetaData::Private },
+	{ "changeTooluttonHighlightColor(const QColor&)", &slot_27, QMetaData::Private },
+	{ "handleButtonStyles(int)", &slot_28, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"changed", 1, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"editApp", 2, param_signal_1 };
+    static const QMetaData signal_tbl[] = {
+	{ "changed(bool)", &signal_0, QMetaData::Public },
+	{ "editApp(QString,QString)", &signal_1, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"kstyle_baghira_config", parentObject,
+	slot_tbl, 29,
+	signal_tbl, 2,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_kstyle_baghira_config.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* kstyle_baghira_config::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "kstyle_baghira_config" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+// SIGNAL changed
+void kstyle_baghira_config::changed( bool t0 )
+{
+    activate_signal_bool( staticMetaObject()->signalOffset() + 0, t0 );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL editApp
+void kstyle_baghira_config::editApp( QString t0, QString t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 1 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_QString.set(o+2,t1);
+    activate_signal( clist, o );
+}
+
+bool kstyle_baghira_config::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: configChanged(); break;
+    case 1: openHtml1(); break;
+    case 2: openHtml2(); break;
+    case 3: startBab(); break;
+    case 4: startKRuler(); break;
+    case 5: sliderButtonRedChanged((int)static_QUType_int.get(_o+1)); break;
+    case 6: sliderButtonGreenChanged((int)static_QUType_int.get(_o+1)); break;
+    case 7: sliderButtonBlueChanged((int)static_QUType_int.get(_o+1)); break;
+    case 8: sliderBrushRedChanged((int)static_QUType_int.get(_o+1)); break;
+    case 9: sliderBrushGreenChanged((int)static_QUType_int.get(_o+1)); break;
+    case 10: sliderBrushBlueChanged((int)static_QUType_int.get(_o+1)); break;
+    case 11: save(); break;
+    case 12: defaults(); break;
+    case 13: updateCR(); break;
+    case 14: showAbout(); break;
+    case 15: editApp(); break;
+    case 16: addApp((QString)static_QUType_QString.get(_o+1),(QString)static_QUType_QString.get(_o+2)); break;
+    case 17: removeApp(); break;
+    case 18: removeApp((QString)static_QUType_QString.get(_o+1)); break;
+    case 19: setDesign((int)static_QUType_int.get(_o+1)); break;
+    case 20: menuToggled((bool)static_QUType_bool.get(_o+1)); break;
+    case 21: enableInButtonColor((int)static_QUType_int.get(_o+1)); break;
+    case 22: enableMenuColorStuff((int)static_QUType_int.get(_o+1)); break;
+    case 23: buttonLoadAction(); break;
+    case 24: buttonSaveAsAction(); break;
+    case 25: setPresetColor((int)static_QUType_int.get(_o+1)); break;
+    case 26: selectWindow(); break;
+    case 27: changeTooluttonHighlightColor((const QColor&)*((const QColor*)static_QUType_ptr.get(_o+1))); break;
+    case 28: handleButtonStyles((int)static_QUType_int.get(_o+1)); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool kstyle_baghira_config::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: changed((bool)static_QUType_bool.get(_o+1)); break;
+    case 1: editApp((QString)static_QUType_QString.get(_o+1),(QString)static_QUType_QString.get(_o+2)); break;
+    default:
+	return QWidget::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool kstyle_baghira_config::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool kstyle_baghira_config::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *AppSetter::className() const
+{
+    return "AppSetter";
+}
+
+QMetaObject *AppSetter::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_AppSetter( "AppSetter", &AppSetter::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString AppSetter::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "AppSetter", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString AppSetter::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "AppSetter", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* AppSetter::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUMethod slot_0 = {"show", 0, 0 };
+    static const QUParameter param_slot_1[] = {
+	{ "appName", &static_QUType_QString, 0, QUParameter::In },
+	{ "link", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"show", 2, param_slot_1 };
+    static const QUMethod slot_2 = {"save", 0, 0 };
+    static const QUMethod slot_3 = {"reset", 0, 0 };
+    static const QUParameter param_slot_4[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"handler", 1, param_slot_4 };
+    static const QUMethod slot_5 = {"updateColors", 0, 0 };
+    static const QUMethod slot_6 = {"resetColorPicker", 0, 0 };
+    static const QUParameter param_slot_7[] = {
+	{ "i", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_7 = {"handleButtonStyles", 1, param_slot_7 };
+    static const QMetaData slot_tbl[] = {
+	{ "show()", &slot_0, QMetaData::Public },
+	{ "show(QString,QString)", &slot_1, QMetaData::Public },
+	{ "save()", &slot_2, QMetaData::Private },
+	{ "reset()", &slot_3, QMetaData::Private },
+	{ "handler(int)", &slot_4, QMetaData::Private },
+	{ "updateColors()", &slot_5, QMetaData::Private },
+	{ "resetColorPicker()", &slot_6, QMetaData::Private },
+	{ "handleButtonStyles(int)", &slot_7, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In },
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"addApp", 2, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"removeApp", 1, param_signal_1 };
+    static const QMetaData signal_tbl[] = {
+	{ "addApp(QString,QString)", &signal_0, QMetaData::Private },
+	{ "removeApp(QString)", &signal_1, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"AppSetter", parentObject,
+	slot_tbl, 8,
+	signal_tbl, 2,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_AppSetter.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* AppSetter::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "AppSetter" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+// SIGNAL addApp
+void AppSetter::addApp( QString t0, QString t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 0 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_QString.set(o+1,t0);
+    static_QUType_QString.set(o+2,t1);
+    activate_signal( clist, o );
+}
+
+// SIGNAL removeApp
+void AppSetter::removeApp( QString t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1, t0 );
+}
+
+bool AppSetter::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: show(); break;
+    case 1: show((QString)static_QUType_QString.get(_o+1),(QString)static_QUType_QString.get(_o+2)); break;
+    case 2: save(); break;
+    case 3: reset(); break;
+    case 4: handler((int)static_QUType_int.get(_o+1)); break;
+    case 5: updateColors(); break;
+    case 6: resetColorPicker(); break;
+    case 7: handleButtonStyles((int)static_QUType_int.get(_o+1)); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool AppSetter::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: addApp((QString)static_QUType_QString.get(_o+1),(QString)static_QUType_QString.get(_o+2)); break;
+    case 1: removeApp((QString)static_QUType_QString.get(_o+1)); break;
+    default:
+	return QWidget::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool AppSetter::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool AppSetter::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

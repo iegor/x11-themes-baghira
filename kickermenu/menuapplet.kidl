@@ -1,0 +1,28 @@
+<!DOCTYPE DCOP-IDL><DCOP-IDL>
+<SOURCE>./menuapplet.h</SOURCE>
+<INCLUDE>kpanelapplet.h</INCLUDE>
+<INCLUDE>qintdict.h</INCLUDE>
+<INCLUDE>qvaluelist.h</INCLUDE>
+<INCLUDE>kmenubar.h</INCLUDE>
+<INCLUDE>kwindowlistmenu.h</INCLUDE>
+<INCLUDE>kwinmodule.h</INCLUDE>
+<INCLUDE>kmanagerselection.h</INCLUDE>
+<INCLUDE>dcopclient.h</INCLUDE>
+<INCLUDE>dcopobject.h</INCLUDE>
+<INCLUDE>qxembed.h</INCLUDE>
+<INCLUDE>karrowbutton.h</INCLUDE>
+<INCLUDE>assert.h</INCLUDE>
+<CLASS>
+    <NAME>KickerMenuApplet::Applet</NAME>
+    <SUPER>KPanelApplet</SUPER>
+    <SUPER>DCOPObject</SUPER>
+    <FUNC>
+        <TYPE>ASYNC</TYPE>
+        <NAME>configure</NAME>
+     </FUNC>
+    <FUNC>
+        <TYPE>void</TYPE>
+        <NAME>showWindowList</NAME>
+     </FUNC>
+</CLASS>
+</DCOP-IDL>

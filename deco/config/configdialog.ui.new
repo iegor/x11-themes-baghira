@@ -1,0 +1,398 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>ConfigDialog</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>ConfigDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>657</width>
+            <height>476</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Configure Baghira Window Decoration</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QButtonGroup" row="0" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>titlealign</cstring>
+            </property>
+            <property name="title">
+                <string>Title &amp;Alignment</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string></string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>Use these buttons to set the alignment of the window title</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QRadioButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>AlignLeft</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Left</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <spacer row="0" column="1">
+                    <property name="name">
+                        <cstring>spacer78</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QRadioButton" row="0" column="2">
+                    <property name="name">
+                        <cstring>AlignHCenter</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Center</string>
+                    </property>
+                    <property name="checked">
+                        <bool>true</bool>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <spacer row="0" column="3">
+                    <property name="name">
+                        <cstring>spacer77</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QRadioButton" row="0" column="4">
+                    <property name="name">
+                        <cstring>AlignRight</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Right</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="0" column="6">
+                    <property name="name">
+                        <cstring>noTitle</cstring>
+                    </property>
+                    <property name="text">
+                        <string>None</string>
+                    </property>
+                </widget>
+                <spacer row="0" column="5">
+                    <property name="name">
+                        <cstring>spacer23_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>51</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="0" column="0" rowspan="3" colspan="1">
+            <property name="name">
+                <cstring>generalbox</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>GroupBoxPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="title">
+                <string>Common Settings</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QComboBox" row="12" column="0">
+                    <item>
+                        <property name="text">
+                            <string>Jaguar</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Panther</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Brushed Metal</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Tiger</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Milk</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>defaultMode</cstring>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="9" column="0">
+                    <property name="name">
+                        <cstring>delAppname</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Try to remove application name
+from multipart titles</string>
+                    </property>
+                </widget>
+                <widget class="Line" row="10" column="0">
+                    <property name="name">
+                        <cstring>line3</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>HLine</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="3" column="0">
+                    <property name="name">
+                        <cstring>drawComicFrame</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Draw Comic Frame</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Draws a black frame around the window (not the Titlebar).&lt;br&gt;Anyway i suggest to get the kwin dropshadow patch.</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="8" column="0">
+                    <property name="name">
+                        <cstring>noModalDeco</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Hide deco for fixed size modal windows</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="6" column="0">
+                    <property name="name">
+                        <cstring>maxResizable</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Keep maximized resizable</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="2" column="0">
+                    <property name="name">
+                        <cstring>ResizeGrip</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Show resize grip</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Starts in Brushed Metal mode instead of default, if the Style is set to Brushed Metal</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="11" column="0">
+                    <property name="name">
+                        <cstring>textLabel1_7</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Default Mode is</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="7" column="0">
+                    <property name="name">
+                        <cstring>fullSpec</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Fullscreen maximized</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Check this to have any window in fullscreen Mode - demaximize the window by clicking into the top right corner of your screen</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="4" column="0">
+                    <property name="name">
+                        <cstring>allowEasyClosing</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Allow Easy Closing</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Allows Closing by clicking into the top left or right corner &lt;br&gt; Close Button must be most left or right element (also no spacers) &lt;br&gt; Closes on Mouse Button release (so you have the chance to move the mouse away and keep the Window) &lt;br&gt; The Window must be active and maximized &lt;br&gt; Unfortunately you will not be able tho resize the Window from that corner</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="5" column="0">
+                    <property name="name">
+                        <cstring>addAutoSpacing</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Add auto spacing</string>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout133</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1_3</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Minimum Title Height</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer6</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>53</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QSpinBox">
+                            <property name="name">
+                                <cstring>minTH</cstring>
+                            </property>
+                            <property name="maxValue">
+                                <number>30</number>
+                            </property>
+                            <property name="minValue">
+                                <number>18</number>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>The Titlebar height will follow your font setting.&lt;br&gt;However, you can set a minmum value to extend the Titlebar if you prefer small fonts.&lt;br&gt;18 is the minimum due to the Buttons :)</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QPushButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>ButtonColorConfig</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Configure Button Colors</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QWidgetStack" row="2" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>decoStack</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="lineWidth">
+                <number>2</number>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>99</x>
+                            <y>99</y>
+                            <width>74</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Blablabla</string>
+                    </property>
+                </widget>
+            </widget>
+        </widget>
+        <widget class="QPushButton" row="1" column="1">
+            <property name="name">
+                <cstring>pushButton2</cstring>
+            </property>
+            <property name="text">
+                <string>Add style</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="1" column="2">
+            <property name="name">
+                <cstring>pushButton3</cstring>
+            </property>
+            <property name="text">
+                <string>Remove Style</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

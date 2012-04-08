@@ -1,0 +1,305 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Help</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Help</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>457</width>
+            <height>720</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>7</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>32767</width>
+            <height>32767</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Baghira Help</string>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>false</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout2</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer2_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>60</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>closeButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Close</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QTabWidget" row="0" column="0">
+            <property name="name">
+                <cstring>tabWidget2</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>BAB</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget" row="1" column="0">
+                        <property name="name">
+                            <cstring>layout3</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer3</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>startBAB</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Start BAB</string>
+                                </property>
+                            </widget>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer4</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </hbox>
+                    </widget>
+                    <widget class="KActiveLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>kActiveLabel2</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>7</hsizetype>
+                                <vsizetype>7</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="resizePolicy">
+                            <enum>Manual</enum>
+                        </property>
+                        <property name="vScrollBarMode">
+                            <enum>Auto</enum>
+                        </property>
+                        <property name="hScrollBarMode">
+                            <enum>Auto</enum>
+                        </property>
+                        <property name="text">
+                            <string>&lt;b&gt;"BAB"&lt;/b&gt; is a little Systray Application to give you more control about the look of your Baghiranced Desktop.&lt;br&gt;
+You can start if from a shell or the KDE executor or by just simply clicking the button below.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;How does it work?&lt;/b&gt;&lt;br&gt;
+a) Simply leftclick the icon to switch between the different generations ( Blue:Jaguar, Black:Panther, Grey:Brushed Metal, Yellow:Tiger, White:Milk)&lt;br&gt;&lt;br&gt;
+b) Righclick to get a config menu, providing direct acces to Baghiras config dialog&lt;br&gt;&lt;br&gt;
+c) BAB is also a DCOP interface to the Baghira Style and Windeco</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>DCOP</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="KActiveLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>kActiveLabel4</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&lt;br&gt;&lt;b&gt;How to acces bab via DCOP&lt;/br&gt;
+&lt;br&gt;Well, if you're a coder, i assume you know hot to access the dcop server from within your code
+&lt;br&gt;If you're a user, the main way to acces dcop is the &lt;b&gt;dcop command line tool&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+To see, which functions are provided by bab (the list will probably grow), open a shell and enter&lt;br&gt;&lt;br&gt;
+&lt;i&gt;&lt;b&gt;dcop bab default&lt;/b&gt;&lt;/i&gt;&lt;br&gt;
+&lt;br&gt;
+The most interesting function is&lt;br&gt;&lt;br&gt;
+&lt;i&gt;&lt;b&gt;start(QString name,QString settings)&lt;/b&gt;&lt;/i&gt;&lt;br&gt;
+&lt;br&gt;
+use it like:&lt;br&gt;&lt;br&gt;
+&lt;i&gt;&lt;b&gt;start &amp;lt;appName&amp;gt; &amp;lt;design&amp;gt;&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+where &lt;i&gt;&lt;b&gt;&amp;lt;appName&amp;gt;&lt;/b&gt;&lt;/i&gt; is the (KDE) application command (try "konqueror") you want to start and &lt;i&gt;&lt;b&gt;&amp;lt;design&amp;gt;&lt;/b&gt;&lt;/i&gt; is a predefined Design you set in the rules section (Baghiracomes with "Jaguar", "Panther", "Brushed", "Tiger" and "Milk")</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Coloring</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="KActiveLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>kActiveLabel3</cstring>
+                        </property>
+                        <property name="text">
+                            <string>The new coloring Function &lt;i&gt;"Aquarius"&lt;/i&gt; replaces the former "&lt;i&gt;icy&lt;/i&gt;" style.
+&lt;br&gt;Though you can use any color, i suggest to avoid very high or very low saturated colors.
+&lt;br&gt;- High saturation will lead to a flat look
+&lt;br&gt;- Low saturation will look uncolored
+&lt;br&gt;
+&lt;br&gt;I suggest to use a button color like rgb = 84,140,242 as a starting Point and modify the color to yoour wishes
+&lt;br&gt;&lt;b&gt;Notice&lt;/b&gt; that the coloring function is probably not fixed yet - especially not in the high saturated area
+&lt;br&gt;So please do not complain if you worked hard to optimize the color and get a different result in one of the next versions.
+&lt;br&gt;
+&lt;br&gt;Additionally, there are two color schemes by Christian Lehmann included.</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Credits</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="KActiveLabel" row="1" column="0">
+                        <property name="name">
+                            <cstring>kActiveLabel1</cstring>
+                        </property>
+                        <property name="vScrollBarMode">
+                            <enum>Auto</enum>
+                        </property>
+                        <property name="hScrollBarMode">
+                            <enum>Auto</enum>
+                        </property>
+                        <property name="text">
+                            <string>&lt;b&gt;Apple Computer, Inc.&lt;/b&gt;&lt;br&gt;For being such great Designers =)&lt;p&gt;
+&lt;b&gt;Christian Lehmann&lt;/b&gt;&lt;br&gt;For the SuSE binaries and Supporting my Ego&lt;p&gt;
+&lt;b&gt;Elias Probst&lt;/b&gt;&lt;br&gt;For the Gentoo ebuild&lt;p&gt;
+&lt;b&gt;Mosfet&lt;/b&gt; (Of Course)&lt;br&gt;For the initial Liquid Code&lt;p&gt;
+&lt;b&gt;Narcis Tesa&lt;/b&gt;&lt;br&gt;For the Mandrake binaries and being the worst nitpicker on this Planet&lt;p&gt;&lt;b&gt;Timur&lt;/b&gt;&lt;br&gt;For the cute icons&lt;p&gt;
+Everyone else who supported me with suggestions, bug reports and Help on the fores.&lt;p&gt;
+&lt;a href="http://www.kde-look.org/"&gt;KDE-Look&lt;/a&gt;&lt;br&gt;
+and&lt;br&gt;
+&lt;a href="http://www.sf.net/"&gt;Sourceforge&lt;/a&gt;&lt;br&gt;
+for hosting the Project</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>textLabel1</cstring>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <bold>1</bold>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>Thanks To (alphabetical):</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+</customwidgets>
+<connections>
+    <connection>
+        <sender>closeButton</sender>
+        <signal>clicked()</signal>
+        <receiver>Help</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>kactivelabel.h</includehint>
+    <includehint>kactivelabel.h</includehint>
+    <includehint>kactivelabel.h</includehint>
+    <includehint>kactivelabel.h</includehint>
+</includehints>
+</UI>

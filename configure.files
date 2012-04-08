@@ -1,0 +1,5 @@
+./admin/configure.in.min
+configure.in.in
+./kickermenu/configure.in.in
+./sidebar/configure.in.in
+./style/configure.in.in

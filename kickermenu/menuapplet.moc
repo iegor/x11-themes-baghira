@@ -1,0 +1,203 @@
+/****************************************************************************
+** KickerMenuApplet::Applet meta object code from reading C++ file 'menuapplet.h'
+**
+** Created: Sun Apr 8 22:00:09 2012
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "menuapplet.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KickerMenuApplet::Applet::className() const
+{
+    return "KickerMenuApplet::Applet";
+}
+
+QMetaObject *KickerMenuApplet::Applet::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KickerMenuApplet__Applet( "KickerMenuApplet::Applet", &KickerMenuApplet::Applet::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KickerMenuApplet::Applet::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KickerMenuApplet::Applet", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KickerMenuApplet::Applet::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KickerMenuApplet::Applet", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KickerMenuApplet::Applet::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KPanelApplet::staticMetaObject();
+    static const QUMethod slot_0 = {"moveMenu", 0, 0 };
+    static const QUParameter param_slot_1[] = {
+	{ "w", &static_QUType_ptr, "WId", QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"windowAdded", 1, param_slot_1 };
+    static const QUParameter param_slot_2[] = {
+	{ "w", &static_QUType_ptr, "WId", QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"activeWindowChanged", 1, param_slot_2 };
+    static const QUMethod slot_3 = {"lostSelection", 0, 0 };
+    static const QUMethod slot_4 = {"readSettings", 0, 0 };
+    static const QUMethod slot_5 = {"claimSelection", 0, 0 };
+    static const QUMethod slot_6 = {"initPopup", 0, 0 };
+    static const QUMethod slot_7 = {"fontChanged", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "moveMenu()", &slot_0, QMetaData::Private },
+	{ "windowAdded(WId)", &slot_1, QMetaData::Private },
+	{ "activeWindowChanged(WId)", &slot_2, QMetaData::Private },
+	{ "lostSelection()", &slot_3, QMetaData::Private },
+	{ "readSettings()", &slot_4, QMetaData::Private },
+	{ "claimSelection()", &slot_5, QMetaData::Private },
+	{ "initPopup()", &slot_6, QMetaData::Private },
+	{ "fontChanged()", &slot_7, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"KickerMenuApplet::Applet", parentObject,
+	slot_tbl, 8,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KickerMenuApplet__Applet.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KickerMenuApplet::Applet::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KickerMenuApplet::Applet" ) )
+	return this;
+    if ( !qstrcmp( clname, "DCOPObject" ) )
+	return (DCOPObject*)this;
+    return KPanelApplet::qt_cast( clname );
+}
+
+bool KickerMenuApplet::Applet::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: moveMenu(); break;
+    case 1: windowAdded((WId)(*((WId*)static_QUType_ptr.get(_o+1)))); break;
+    case 2: activeWindowChanged((WId)(*((WId*)static_QUType_ptr.get(_o+1)))); break;
+    case 3: lostSelection(); break;
+    case 4: readSettings(); break;
+    case 5: claimSelection(); break;
+    case 6: initPopup(); break;
+    case 7: fontChanged(); break;
+    default:
+	return KPanelApplet::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool KickerMenuApplet::Applet::qt_emit( int _id, QUObject* _o )
+{
+    return KPanelApplet::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KickerMenuApplet::Applet::qt_property( int id, int f, QVariant* v)
+{
+    return KPanelApplet::qt_property( id, f, v);
+}
+
+bool KickerMenuApplet::Applet::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *KickerMenuApplet::MenuEmbed::className() const
+{
+    return "KickerMenuApplet::MenuEmbed";
+}
+
+QMetaObject *KickerMenuApplet::MenuEmbed::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KickerMenuApplet__MenuEmbed( "KickerMenuApplet::MenuEmbed", &KickerMenuApplet::MenuEmbed::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KickerMenuApplet::MenuEmbed::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KickerMenuApplet::MenuEmbed", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KickerMenuApplet::MenuEmbed::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KickerMenuApplet::MenuEmbed", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KickerMenuApplet::MenuEmbed::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QXEmbed::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"KickerMenuApplet::MenuEmbed", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KickerMenuApplet__MenuEmbed.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KickerMenuApplet::MenuEmbed::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KickerMenuApplet::MenuEmbed" ) )
+	return this;
+    return QXEmbed::qt_cast( clname );
+}
+
+bool KickerMenuApplet::MenuEmbed::qt_invoke( int _id, QUObject* _o )
+{
+    return QXEmbed::qt_invoke(_id,_o);
+}
+
+bool KickerMenuApplet::MenuEmbed::qt_emit( int _id, QUObject* _o )
+{
+    return QXEmbed::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KickerMenuApplet::MenuEmbed::qt_property( int id, int f, QVariant* v)
+{
+    return QXEmbed::qt_property( id, f, v);
+}
+
+bool KickerMenuApplet::MenuEmbed::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

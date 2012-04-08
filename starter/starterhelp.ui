@@ -1,0 +1,121 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>StarterHelp</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>StarterHelp</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>510</width>
+            <height>582</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Baghira Starter Config Help</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTabWidget" row="0" column="0">
+            <property name="name">
+                <cstring>tabWidget2</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Filterline</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>textLabel5</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&lt;qt&gt;The filterline provides several functions
+&lt;ul&gt;
+&lt;li&gt;It filters the below entry list&lt;/li&gt;
+&lt;li&gt;It autocompletes to executable entries in $PATH&lt;/li&gt;
+&lt;li&gt;The applied listbox lets you select the available categories&lt;/li&gt;
+&lt;li&gt;You can navigate through the categories either by using the mousewheel or by holding &lt;b&gt;ctrl+up/down&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;The category is also selected when calling the applied shortcut&lt;/li&gt;
+&lt;li&gt;It supports all protocols you know from Konqueror, e.g. "gg:Baghira" will google for "Baghira" etc.&lt;/li&gt;
+&lt;/ul&gt;
+Pressing &lt;b&gt;Enter&lt;/b&gt; will execute the (autocompleted) binary in $PATH or the entered kfm protocol call&lt;br&gt;
+Pressing &lt;b&gt;down&lt;/b&gt;  will move the keyboard focus to the below entry list
+&lt;/qt&gt;</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Entry Field</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>textLabel6</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&lt;qt&gt;The entry field shows up all your menu entries (filtered)&lt;br&gt;&lt;br&gt;
+You can start an application by clicking the &lt;b&gt;left mouse button&lt;/b&gt; above the item (highlighted text) or by pressing &lt;b&gt;Enter&lt;/b&gt; if the entry has the keyboard focus (highlighted background).&lt;br&gt;&lt;br&gt;
+You may navigate by either scrolling the &lt;b&gt;mousewheel&lt;/b&gt; or using the &lt;b&gt;up/down&lt;/b&gt; keys (this will also shift the keyboard focus)&lt;br&gt;&lt;br&gt;
+Pressing the &lt;b&gt;left&lt;/b&gt; key will put focus on the filterline and select the whole text (i.e. start typing will change a complete new filter action)&lt;br&gt;&lt;br&gt;
+Pressing the &lt;b&gt;up&lt;/b&gt; key on the topmost item will act as above.&lt;/qt&gt;</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>TabPage</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Panel</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>textLabel1</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&lt;qt&gt;The panel allow you to store often used links, independent from the application links in the entry list&lt;br&gt;&lt;br&gt;
+To &lt;b&gt;add a link&lt;/b&gt;, either:&lt;br&gt;
+- rightclick the panel&lt;br&gt;
+- drag and drop a link out of the entry list&lt;br&gt;
+- drag and drop any url or text or command (uris and mails are handled, the rest is interpreted as simple command, any command that works on the filterline works here as well)&lt;br&gt;
+&lt;br&gt;
+To &lt;b&gt;remove a link&lt;/b&gt;, simply drag it out and drop it outside. (The panel interacts with the linklist from the baghira sidebar, links won't be removed, but copied if dragged from one to the other)&lt;br&gt;
+&lt;br&gt;
+To &lt;b&gt;configure a link&lt;/b&gt;, simply rightclick it&lt;br&gt;&lt;br&gt;
+To &lt;b&gt;move a link&lt;/b&gt;, just drag it and move i around.&lt;br&gt;&lt;br&gt;
+
+Te panel is &lt;b&gt;scrollable (mousewheel)&lt;/b&gt; and you can configure &lt;b&gt;individual positions&lt;/b&gt; for the popup and the dialog&lt;br&gt;&lt;br&gt;
+More poofs can be found e.g. here: &lt;a href="http://www.resexcellence.com/user_poofs.shtml"&gt;www.resexcellence.com/user_poofs.shtml&lt;/a&gt;
+&lt;/qt&gt;</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

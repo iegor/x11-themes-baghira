@@ -1,0 +1,324 @@
+/****************************************************************************
+** ResizingLinkBox meta object code from reading C++ file 'dndlistbox.h'
+**
+** Created: Sun Apr 8 22:00:15 2012
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "dndlistbox.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *ResizingLinkBox::className() const
+{
+    return "ResizingLinkBox";
+}
+
+QMetaObject *ResizingLinkBox::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_ResizingLinkBox( "ResizingLinkBox", &ResizingLinkBox::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString ResizingLinkBox::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ResizingLinkBox", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString ResizingLinkBox::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ResizingLinkBox", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* ResizingLinkBox::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KListBox::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"setIconSize", 1, param_slot_0 };
+    static const QMetaData slot_tbl[] = {
+	{ "setIconSize(int)", &slot_0, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"itemNumberChanged", 1, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In },
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"scrolled", 2, param_signal_1 };
+    static const QMetaData signal_tbl[] = {
+	{ "itemNumberChanged(bool)", &signal_0, QMetaData::Private },
+	{ "scrolled(int,int)", &signal_1, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"ResizingLinkBox", parentObject,
+	slot_tbl, 1,
+	signal_tbl, 2,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_ResizingLinkBox.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* ResizingLinkBox::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "ResizingLinkBox" ) )
+	return this;
+    return KListBox::qt_cast( clname );
+}
+
+// SIGNAL itemNumberChanged
+void ResizingLinkBox::itemNumberChanged( bool t0 )
+{
+    activate_signal_bool( staticMetaObject()->signalOffset() + 0, t0 );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL scrolled
+void ResizingLinkBox::scrolled( int t0, int t1 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 1 );
+    if ( !clist )
+	return;
+    QUObject o[3];
+    static_QUType_int.set(o+1,t0);
+    static_QUType_int.set(o+2,t1);
+    activate_signal( clist, o );
+}
+
+bool ResizingLinkBox::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: setIconSize((int)static_QUType_int.get(_o+1)); break;
+    default:
+	return KListBox::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool ResizingLinkBox::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: itemNumberChanged((bool)static_QUType_bool.get(_o+1)); break;
+    case 1: scrolled((int)static_QUType_int.get(_o+1),(int)static_QUType_int.get(_o+2)); break;
+    default:
+	return KListBox::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool ResizingLinkBox::qt_property( int id, int f, QVariant* v)
+{
+    return KListBox::qt_property( id, f, v);
+}
+
+bool ResizingLinkBox::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *MediaListBox::className() const
+{
+    return "MediaListBox";
+}
+
+QMetaObject *MediaListBox::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_MediaListBox( "MediaListBox", &MediaListBox::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString MediaListBox::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "MediaListBox", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString MediaListBox::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "MediaListBox", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* MediaListBox::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = ResizingLinkBox::staticMetaObject();
+    static const QUMethod slot_0 = {"kfloppy", 0, 0 };
+    static const QUParameter param_slot_1[] = {
+	{ "id", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"toggleDevice", 1, param_slot_1 };
+    static const QMetaData slot_tbl[] = {
+	{ "kfloppy()", &slot_0, QMetaData::Private },
+	{ "toggleDevice(int)", &slot_1, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"MediaListBox", parentObject,
+	slot_tbl, 2,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_MediaListBox.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* MediaListBox::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "MediaListBox" ) )
+	return this;
+    if ( !qstrcmp( clname, "BaghiraSidebarIface" ) )
+	return (BaghiraSidebarIface*)this;
+    return ResizingLinkBox::qt_cast( clname );
+}
+
+bool MediaListBox::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: kfloppy(); break;
+    case 1: toggleDevice((int)static_QUType_int.get(_o+1)); break;
+    default:
+	return ResizingLinkBox::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool MediaListBox::qt_emit( int _id, QUObject* _o )
+{
+    return ResizingLinkBox::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool MediaListBox::qt_property( int id, int f, QVariant* v)
+{
+    return ResizingLinkBox::qt_property( id, f, v);
+}
+
+bool MediaListBox::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *DnDListBox::className() const
+{
+    return "DnDListBox";
+}
+
+QMetaObject *DnDListBox::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_DnDListBox( "DnDListBox", &DnDListBox::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString DnDListBox::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "DnDListBox", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString DnDListBox::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "DnDListBox", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* DnDListBox::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = ResizingLinkBox::staticMetaObject();
+    static const QUMethod slot_0 = {"configureLink", 0, 0 };
+    static const QUMethod slot_1 = {"updateLink", 0, 0 };
+    static const QUMethod slot_2 = {"runPoof", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "configureLink()", &slot_0, QMetaData::Private },
+	{ "updateLink()", &slot_1, QMetaData::Private },
+	{ "runPoof()", &slot_2, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"DnDListBox", parentObject,
+	slot_tbl, 3,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_DnDListBox.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* DnDListBox::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "DnDListBox" ) )
+	return this;
+    return ResizingLinkBox::qt_cast( clname );
+}
+
+bool DnDListBox::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: configureLink(); break;
+    case 1: updateLink(); break;
+    case 2: runPoof(); break;
+    default:
+	return ResizingLinkBox::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool DnDListBox::qt_emit( int _id, QUObject* _o )
+{
+    return ResizingLinkBox::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool DnDListBox::qt_property( int id, int f, QVariant* v)
+{
+    return ResizingLinkBox::qt_property( id, f, v);
+}
+
+bool DnDListBox::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

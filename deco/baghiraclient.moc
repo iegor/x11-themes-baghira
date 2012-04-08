@@ -1,0 +1,356 @@
+/****************************************************************************
+** Baghira::ResizeHandle meta object code from reading C++ file 'baghiraclient.h'
+**
+** Created: Sun Apr 8 21:58:42 2012
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "baghiraclient.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Baghira::ResizeHandle::className() const
+{
+    return "Baghira::ResizeHandle";
+}
+
+QMetaObject *Baghira::ResizeHandle::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Baghira__ResizeHandle( "Baghira::ResizeHandle", &Baghira::ResizeHandle::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Baghira::ResizeHandle::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Baghira::ResizeHandle", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Baghira::ResizeHandle::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Baghira::ResizeHandle", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Baghira::ResizeHandle::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"Baghira::ResizeHandle", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Baghira__ResizeHandle.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Baghira::ResizeHandle::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Baghira::ResizeHandle" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool Baghira::ResizeHandle::qt_invoke( int _id, QUObject* _o )
+{
+    return QWidget::qt_invoke(_id,_o);
+}
+
+bool Baghira::ResizeHandle::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Baghira::ResizeHandle::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool Baghira::ResizeHandle::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *Baghira::DeMaximizer::className() const
+{
+    return "Baghira::DeMaximizer";
+}
+
+QMetaObject *Baghira::DeMaximizer::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Baghira__DeMaximizer( "Baghira::DeMaximizer", &Baghira::DeMaximizer::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Baghira::DeMaximizer::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Baghira::DeMaximizer", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Baghira::DeMaximizer::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Baghira::DeMaximizer", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Baghira::DeMaximizer::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"Baghira::DeMaximizer", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Baghira__DeMaximizer.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Baghira::DeMaximizer::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Baghira::DeMaximizer" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool Baghira::DeMaximizer::qt_invoke( int _id, QUObject* _o )
+{
+    return QWidget::qt_invoke(_id,_o);
+}
+
+bool Baghira::DeMaximizer::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Baghira::DeMaximizer::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool Baghira::DeMaximizer::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *Baghira::BaghiraButton::className() const
+{
+    return "Baghira::BaghiraButton";
+}
+
+QMetaObject *Baghira::BaghiraButton::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Baghira__BaghiraButton( "Baghira::BaghiraButton", &Baghira::BaghiraButton::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Baghira::BaghiraButton::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Baghira::BaghiraButton", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Baghira::BaghiraButton::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Baghira::BaghiraButton", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Baghira::BaghiraButton::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QButton::staticMetaObject();
+    static const QUMethod slot_0 = {"delayedEnterEvent", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "delayedEnterEvent()", &slot_0, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Baghira::BaghiraButton", parentObject,
+	slot_tbl, 1,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Baghira__BaghiraButton.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Baghira::BaghiraButton::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Baghira::BaghiraButton" ) )
+	return this;
+    return QButton::qt_cast( clname );
+}
+
+bool Baghira::BaghiraButton::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: delayedEnterEvent(); break;
+    default:
+	return QButton::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Baghira::BaghiraButton::qt_emit( int _id, QUObject* _o )
+{
+    return QButton::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Baghira::BaghiraButton::qt_property( int id, int f, QVariant* v)
+{
+    return QButton::qt_property( id, f, v);
+}
+
+bool Baghira::BaghiraButton::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *Baghira::BaghiraClient::className() const
+{
+    return "Baghira::BaghiraClient";
+}
+
+QMetaObject *Baghira::BaghiraClient::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Baghira__BaghiraClient( "Baghira::BaghiraClient", &Baghira::BaghiraClient::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Baghira::BaghiraClient::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Baghira::BaghiraClient", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Baghira::BaghiraClient::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Baghira::BaghiraClient", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Baghira::BaghiraClient::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KDecoration::staticMetaObject();
+    static const QUMethod slot_0 = {"doShape", 0, 0 };
+    static const QUMethod slot_1 = {"maxButtonPressed", 0, 0 };
+    static const QUMethod slot_2 = {"menuButtonPressed", 0, 0 };
+    static const QUMethod slot_3 = {"aboveBelowButtonPressed", 0, 0 };
+    static const QUMethod slot_4 = {"shadeButtonPressed", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "doShape()", &slot_0, QMetaData::Private },
+	{ "maxButtonPressed()", &slot_1, QMetaData::Private },
+	{ "menuButtonPressed()", &slot_2, QMetaData::Private },
+	{ "aboveBelowButtonPressed()", &slot_3, QMetaData::Private },
+	{ "shadeButtonPressed()", &slot_4, QMetaData::Private }
+    };
+    static const QUMethod signal_0 = {"hide", 0, 0 };
+    static const QMetaData signal_tbl[] = {
+	{ "hide()", &signal_0, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Baghira::BaghiraClient", parentObject,
+	slot_tbl, 5,
+	signal_tbl, 1,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Baghira__BaghiraClient.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Baghira::BaghiraClient::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Baghira::BaghiraClient" ) )
+	return this;
+    return KDecoration::qt_cast( clname );
+}
+
+// SIGNAL hide
+void Baghira::BaghiraClient::hide()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+bool Baghira::BaghiraClient::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: doShape(); break;
+    case 1: maxButtonPressed(); break;
+    case 2: menuButtonPressed(); break;
+    case 3: aboveBelowButtonPressed(); break;
+    case 4: shadeButtonPressed(); break;
+    default:
+	return KDecoration::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Baghira::BaghiraClient::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: hide(); break;
+    default:
+	return KDecoration::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Baghira::BaghiraClient::qt_property( int id, int f, QVariant* v)
+{
+    return KDecoration::qt_property( id, f, v);
+}
+
+bool Baghira::BaghiraClient::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

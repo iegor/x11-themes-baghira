@@ -1,0 +1,156 @@
+/****************************************************************************
+** StyleConfigDialog meta object code from reading C++ file 'styleconfdialog.h'
+**
+** Created: Sun Apr 8 21:58:23 2012
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "styleconfdialog.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *StyleConfigDialog::className() const
+{
+    return "StyleConfigDialog";
+}
+
+QMetaObject *StyleConfigDialog::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_StyleConfigDialog( "StyleConfigDialog", &StyleConfigDialog::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString StyleConfigDialog::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "StyleConfigDialog", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString StyleConfigDialog::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "StyleConfigDialog", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* StyleConfigDialog::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KDialogBase::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "dirty", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"setStyleDirty", 1, param_slot_0 };
+    static const QUMethod slot_1 = {"setDecoDirty", 0, 0 };
+    static const QUMethod slot_2 = {"saveDeco", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "setStyleDirty(bool)", &slot_0, QMetaData::Public },
+	{ "setDecoDirty()", &slot_1, QMetaData::Public },
+	{ "saveDeco()", &slot_2, QMetaData::Private }
+    };
+    static const QUMethod signal_0 = {"defaults", 0, 0 };
+    static const QUMethod signal_1 = {"save", 0, 0 };
+    static const QUParameter param_signal_2[] = {
+	{ 0, &static_QUType_ptr, "KConfig", QUParameter::In }
+    };
+    static const QUMethod signal_2 = {"save", 1, param_signal_2 };
+    static const QMetaData signal_tbl[] = {
+	{ "defaults()", &signal_0, QMetaData::Private },
+	{ "save()", &signal_1, QMetaData::Private },
+	{ "save(KConfig*)", &signal_2, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"StyleConfigDialog", parentObject,
+	slot_tbl, 3,
+	signal_tbl, 3,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_StyleConfigDialog.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* StyleConfigDialog::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "StyleConfigDialog" ) )
+	return this;
+    return KDialogBase::qt_cast( clname );
+}
+
+// SIGNAL defaults
+void StyleConfigDialog::defaults()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0 );
+}
+
+// SIGNAL save
+void StyleConfigDialog::save()
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1 );
+}
+
+#include <qobjectdefs.h>
+#include <qsignalslotimp.h>
+
+// SIGNAL save
+void StyleConfigDialog::save( KConfig* t0 )
+{
+    if ( signalsBlocked() )
+	return;
+    QConnectionList *clist = receivers( staticMetaObject()->signalOffset() + 2 );
+    if ( !clist )
+	return;
+    QUObject o[2];
+    static_QUType_ptr.set(o+1,t0);
+    activate_signal( clist, o );
+}
+
+bool StyleConfigDialog::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: setStyleDirty((bool)static_QUType_bool.get(_o+1)); break;
+    case 1: setDecoDirty(); break;
+    case 2: saveDeco(); break;
+    default:
+	return KDialogBase::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool StyleConfigDialog::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: defaults(); break;
+    case 1: save(); break;
+    case 2: save((KConfig*)static_QUType_ptr.get(_o+1)); break;
+    default:
+	return KDialogBase::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool StyleConfigDialog::qt_property( int id, int f, QVariant* v)
+{
+    return KDialogBase::qt_property( id, f, v);
+}
+
+bool StyleConfigDialog::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

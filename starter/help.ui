@@ -1,0 +1,123 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>HelpDialog</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>HelpDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Help</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="KTextEdit" row="0" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>kTextEdit2</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="text">
+                <string>&lt;p align="center"&gt;&lt;font size="+3"&gt;&lt;b&gt;Menu entry editor&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p align="center"&gt;----------------------------------------------------------------------------------&lt;/p&gt;
+&lt;h3&gt;Introduction&lt;/h3&gt;
+
+By default, you will only see the basic settings for the new entry. Clicking "Show More" will give you access to some extended settings that can be interesting but mostly useless for you.&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Bold options must be entered&lt;/b&gt; for a usefull entry, i&lt;i&gt;talic ones are respected by the search feature&lt;/i&gt;.
+&lt;br&gt;&lt;br&gt;
+&lt;h3&gt;Basic settings&lt;/h3&gt;
+
+&lt;b&gt;Name:&lt;/b&gt;&lt;br&gt;
+This is the visible name of your new entry and can be any string, e.g. "The Gimp".&lt;br&gt;
+(Necessary, searchkey)
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Is a:&lt;/b&gt;&lt;br&gt;
+Describes the applications genre (generic name), e.g. "Image manipulation"&lt;br&gt;
+(Optional, yet not searched - maybe later)
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Category:&lt;/b&gt;&lt;br&gt;
+Choose an existing group or add a new one. The hierarchy is represented by seperating slashes ("/"), if you want to enter a slash, you must escape it ("\/")&lt;br&gt;
+(Necessary, searchkey)
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Command:&lt;/b&gt;&lt;br&gt;
+The command to start the application, e.g. "gimp-remote". On *nix systems, is usually not necessary to pass the full path to the executably, but you can do so, if you want to start an executable that is shadowed by the executable in the path dir, e.g. "/usr/local/gimp-1.3/gimp-remote"&lt;br&gt;
+(Necessary, not searched)
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Keywords:&lt;/b&gt;&lt;br&gt;
+Comma separated list of keywords that refer to this application during search, e.g. "image manipulation,pixel,photoshop".&lt;br&gt;
+Please note:&lt;br&gt;
+1. search is &lt;i&gt;not&lt;/i&gt; case sensitive&lt;br&gt;
+2. search finds partial matches, so it's &lt;i&gt;not&lt;/i&gt; necessary to add e.g. "image,image manipulation"&lt;br&gt;
+3. different from the applications name, the keyword list will be translated (if) so if you think like "'KImage' allready contains 'image', so i don't need it as keyword" &lt;b&gt;you're wrong!&lt;/b&gt;&lt;br&gt;
+4. Finding good keywords is not simple, but in general use striking ones! "editor" is not a very good keyword, as allmost everything is an editor. (Gimp is a pixel-editor, KHexedit is a hex-editor, KEdit is a text-editor, a config dialog is a config-editor, ...)&lt;br&gt;
+(Optional, searchkey)
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;
+This is the longtext description of your application (not a helptext, though ;), e.g. "A powerfull image manipulator with a UI similar to photoshop. Supports Layers, filters, scripting, blahblahblah..."
+You can use Qt richtext tags and there's no limit on the size, but keep it usefull ;) let's say something about 200 chars at max.&lt;br&gt;
+(Optional, not searched)</string>
+            </property>
+            <property name="readOnly">
+                <bool>true</bool>
+            </property>
+            <property name="undoRedoEnabled">
+                <bool>false</bool>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="1" column="1">
+            <property name="name">
+                <cstring>buttonClose</cstring>
+            </property>
+            <property name="text">
+                <string>Close</string>
+            </property>
+        </widget>
+        <spacer row="1" column="0">
+            <property name="name">
+                <cstring>spacer4</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>231</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+    </grid>
+</widget>
+<customwidgets>
+</customwidgets>
+<connections>
+    <connection>
+        <sender>buttonClose</sender>
+        <signal>released()</signal>
+        <receiver>HelpDialog</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>ktextedit.h</includehint>
+</includehints>
+</UI>
